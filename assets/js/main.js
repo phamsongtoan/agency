@@ -223,9 +223,6 @@ $('.content-slide__scroll').slick({
   }
 
 
-  //light gallery
-
-  $("#lightgallery").lightGallery();
     
     //AOS
     // AOS.init({

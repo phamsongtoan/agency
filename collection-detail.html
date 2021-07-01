@@ -261,23 +261,23 @@
                     </div>
                     <div class="detail-content">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="detail-content__left">
                                     <div class="row">
                                         <div class="col-md-10">
-                                            <div class="content-slide__show" id="lightgallery">
+                                            <div class="content-slide__show">
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a  href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
-                                                        </div>                                                   
+                                                        </div>  
+                                                        <img src="./assets/images/slide-show.jpg" class="img-fluid" alt="">
                                                     </a>
-                                                    <img src="./assets/images/slide-show.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-2.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -285,8 +285,8 @@
                                                     <img src="./assets/images/slide-show-2.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-3.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -294,8 +294,8 @@
                                                     <img src="./assets/images/slide-show-3.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-4.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -303,8 +303,8 @@
                                                     <img src="./assets/images/slide-show-4.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-5.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -312,8 +312,8 @@
                                                     <img src="./assets/images/slide-show-5.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-6.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -321,8 +321,8 @@
                                                     <img src="./assets/images/slide-show-6.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="content-slide__show-item">
-                                                    <a href="./assets/images/slide-show-2.jpg">     
-                                                        <div class="img-thumbnail btn-full">
+                                                    <a href="#">     
+                                                        <div class=" btn-full">
                                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                             Xem lớn
                                                         </div>                                                   
@@ -367,7 +367,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="detail-content__right">
                                     <h2 class="detail-title">
                                         Áo Polo Pique FitSoft thế hệ mới - Vừa vặn & Thoải mái
@@ -494,7 +494,7 @@
                                         </div>
                                         <div class="detail-color__list">
                                             <ul>
-                                                <li>
+                                                <li class="active">
                                                     <span>
                                                         <img src="./assets/images/xanhnavy.jpg" class="img-fluid" alt="">
                                                     </span>
@@ -514,12 +514,14 @@
                                     </div>
                                     <div class="detail-size">
                                         <div class="detail-size__title">
-                                            Kích thước Áo: <span class="fw-bold">  S  </span>(1m55 - 1m59, 48kg - 54kg)
-                                            <a href="#">Hướng dẫn chọn size</a>
+                                            <div>
+                                                Kích thước Áo: <span class="fw-bold fs-18">  S  </span>(1m55 - 1m59, 48kg - 54kg)
+                                            </div>
+                                            <a href="#" class="c-blue text-decoration-none">Hướng dẫn chọn size</a>
                                         </div>
                                         <div class="detail-size__list">
                                             <ul>
-                                                <li>
+                                                <li class="active">
                                                     <span>
                                                         s
                                                     </span>
@@ -549,12 +551,439 @@
                                         </div>
                                     </div>
                                     <div class="detail-amount">
+                                        <label for="quantity">Chọn số lượng:</label>
                                         <div class="number-input">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
                                             <input class="quantity" min="0" name="quantity" value="1" type="number">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                           </div>
                                     </div>
+                                    <div class="detail-add">
+                                        <div class="text-uppercase">
+                                            Mua <span>Xám S</span>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.213" height="15.928" viewBox="0 0 17.213 15.928">
+                                            <g id="Group_2" data-name="Group 2" transform="translate(5.704 12.9)">
+                                                <g id="Group_1" data-name="Group 1">
+                                                    <path id="Path_1" d="M171.17 402.828a1.514 1.514 0 1 0 1.514 1.514 1.516 1.516 0 0 0-1.514-1.514zm0 2.182a.669.669 0 1 1 .669-.669.669.669 0 0 1-.669.669z" fill="currentColor" data-name="Path 1" transform="translate(-169.656 -402.828)"></path>
+                                                </g>
+                                            </g>
+                                            <g id="Group_4" data-name="Group 4" transform="translate(11.014 12.9)">
+                                                <g id="Group_3" data-name="Group 3">
+                                                    <path id="Path_2" d="M329.115 402.828a1.514 1.514 0 1 0 1.514 1.514 1.516 1.516 0 0 0-1.514-1.514zm0 2.182a.669.669 0 1 1 .669-.669.669.669 0 0 1-.669.669z" fill="currentColor" data-name="Path 2" transform="translate(-327.601 -402.828)"></path>
+                                                </g>
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10">
+                                                <g id="Group_9" data-name="Group 9">
+                                                    <path id="Path_5" d="M17.022 22.161a.842.842 0 0 0-.655-.311H3.2l-.266-1.291a.846.846 0 0 0-.491-.6l-1.852-.81a.423.423 0 0 0-.337.775l1.855.805 2.045 9.926a.848.848 0 0 0 .828.675h10.125a.423.423 0 1 0 0-.845H4.982l-.249-1.207h10.452a.848.848 0 0 0 .828-.675l1.187-5.738a.842.842 0 0 0-.178-.704zm-1.837 6.272H4.559l-1.182-5.738h12.99z" fill="currentColor" data-name="Path 5" transform="translate(0 -19.114)"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-support">
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images/phone.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                    Hotline <a href="tel: 1900272737 ">1900.27.27.37</a> hỗ trợ từ 8h30 - 22h mỗi ngày
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images//shipping.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                    Miễn phí vận chuyển <span>Cho đơn hàng trên 300k</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images/back.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                   <span>60 ngày</span>  đổi trả vì bất kỳ lý do gì
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images/time.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                    Giao hàng <span>24h</span>  ở HN & HCM 2-3 ngày ở tỉnh khác
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images/house.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                    Đến <span>tận nơi </span>  nhận hàng trả, hoàn tiền trong  <span>24h</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-support__item">
+                                            <div class="support-icon">
+                                                <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="support-content">
+                                                <p>
+                                                    Đổi trả <span>cực dễ</span> chỉ cần số điện thoại
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail-descrep">
+                                        <div class="detail-descrep__title">
+                                            Đặc điểm sản phẩm:
+                                        </div>
+                                        <div class="detail-descrep__main">
+                                            <div class="descrep-item">
+                                                <div class="descrep-item__icon">
+                                                    <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="descrep-item__content">
+                                                    <p>
+                                                        Người mẫu: 1m84 - 73kg * Mặc size 2XL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="descrep-item">
+                                                <div class="descrep-item__icon">
+                                                    <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="descrep-item__content">
+                                                    <p>
+                                                        Chất liệu: 95% Cotton Compact - 5% Spandex
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="descrep-item">
+                                                <div class="descrep-item__icon">
+                                                    <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="descrep-item__content">
+                                                    <p>
+                                                        Mềm mại và không gây khó chịu khi mặc
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="descrep-item">
+                                                <div class="descrep-item__icon">
+                                                    <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="descrep-item__content">
+                                                    <p>
+                                                        Chất liệu co giãn 4 chiều đem lại sự thoải mái suốt ngày dài
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="descrep-item">
+                                                <div class="descrep-item__icon">
+                                                    <img src="./assets/images/smile.svg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="descrep-item__content">
+                                                    <p>
+                                                        Sản xuất tại xưởng 8 năm kinh nghiệm tại TP Hồ Chí Minh * <a href="#">Xem nhà máy</a>  >
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-descreption">
+                        <div class="detail-descreption__title">
+                            Mô tả chi tiết
+                        </div>
+                        <div class="detail-descreption__main">
+                            <p>
+                                Bạn đang tìm kiếm một chiếc áo chắc chắn phải có trong mọi tủ đồ của chàng trai đơn giản, hiện đại. Đó là một chiếc áo có thể mặc mọi lúc, mọi nơi vừa lịch sự khi đi làm nhưng vẫn thoải mái, tự tin khi đi chơi, đi cafe với bạn. Một chiếc áo không cần suy nghĩ đến kiểu dáng và luôn giúp bạn trông thật thời thượng và nam tính. Premium Tshirt Coolmate chính là chiếc áo thun dành cho bạn, một phiên bản áo thun hoàn toàn mới và đầy sự cải tiến được Coolmate team nghiên cứu kỹ lưỡng và ngày càng cải tiến hơn với chất liệu Cotton Compact chất lượng cao.
+                            </p>
+                            <div class="text-center">
+                                <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="infor-box">
+                                Những chiếc áo của Coolmate sử dụng chất liệu cotton compact, một dạng cotton chất lượng cao đem đến cho người mặc trải nghiệm tuyệt vời nhất. "Cotton Compact" là câu trả lời cho các bạn đang tìm kiếm cho mình một chiếc áo thun mặc lên nhìn đẹp trai hơn một chút, bền hơn và thoáng mát hơn.
+                            </div>
+                            <div class="text-center">
+                                <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                            </div>
+                            <ul>
+                                <li>
+                                   <strong>Cảm giác mướt tay, êm ái và mềm mại ngay lần đầu chạm</strong>  , bền và mềm x2 lần so với Cotton thông thường 
+                                </li>
+                                <li>
+                                   <strong>
+                                    Không nhăn, không co rút sau khi giặt
+                                   </strong>, chỉ cần lấy từ trong tủ và tự tin mặc mà không cần ủi đồ 
+                                </li>
+                                <li>
+                                    Đặc biệt cotton chất lượng cao, vải dệt thoáng khí tạo sự <strong>thoải mái, thoáng mát khi mặc </strong> 
+                                </li>
+                            </ul>
+
+                            <h4 class="text-center fs-24">
+                                Áo thun Cotton Compact phiên bản Premium cùng sự cải tiến không ngừng 
+                            </h4>
+                            <div class="text-center">
+                                <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                            </div>
+                            <h4 class="text-center fs-24">
+                                Một chiếc áo làm thay đổi cách nhìn nhận của bạn về áo thun trơn
+                            </h4>
+                            <p>Vẫn là Cotton, nhưng đây là Cotton Compact - với độ bền và mượt hơn gấp 2 lần cotton thường. Chỉ cần chạm vào là bạn sẽ cảm nhận ngay sự khác biệt: Mềm - Mát rõ rệt.
+                            </p>
+                            <div class="text-center">
+                                <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                            </div>
+                            <h4 class="text-center fs-24">
+                                COOLMATE VÀ NHỮNG CHIẾC ÁO PREMIUM
+                            </h4>
+                            <table>
+                                <tbody> 
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <p>
+                                                Coolmate không ngừng cải tiến và nâng cao những sản phẩm của mình từng ngày ♥️ Hơn một năm từ ngày ra mắt phiên bản áo thun đầu tiên từ tháng 02/2019, tới thời điểm tháng 6/2020 chiếc áo thun bạn thấy ở website đã qua 4 lần cải tiến:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Điều chỉnh việc chải lông kỹ hơn,
+                                                </li>
+                                                <li>
+                                                    Cải tiến đường may đôi ở vai áo để giữ form,
+
+                                                </li>
+                                                <li>
+                                                    Điều chỉnh size áo vừa vặn hơn & nâng cấp vải may ở cổ áo.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Và Coolmate chính thức cho ra mắt sản phẩm áo thun không nhăn phiên bản mới Premium Tshirt - với chất liệu Cotton Compact đem đến cho người mặc sự thoáng mát và thoải mái nhất khi mặc.
+                                            </p>
+                                        </td>
+                                        <td style="width: 50%;">
+                                            <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                Coolmate tin bằng tất cả tâm huyết nghiên cứu và ra mắt, Premium Tshirt Cotton Compact sẽ là chiếc áo thun cotton chất lượng cao mà bất kỳ chàng trai nào cũng có trong tủ đồ của mình.
+                            </p>
+
+                            <a href="#">
+                                <img src="./assets/images/thun2x-80_44.jpg" class="img-fluid" alt="">
+                            </a>
+                            <p>
+                                <strong class="text-uppercase">
+                                    CHỈ SỐ NGƯỜI MẪU: 
+                                </strong> 1m84 nặng 73kg
+                                <br>
+                                Áo: 2XL 
+                                <br>
+                                Quần: 2XL
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="collection-detail__review">
+                        <div class="collection-detail__review-title fs-24">
+                            Đánh giá
+                        </div>
+                        <div class="collection-detail__review-total">
+                            <div>
+                                <span>230</span>  người đánh giá: 
+                            </div>
+                            <div class="rating-start">
+                                <span>
+                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                </span>
+                                <span>
+                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                </span>
+                                <span>
+                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                </span>
+                                <span>
+                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                </span>
+                                <span>
+                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="collection-detail__review-main">
+                            <div class="review-item">
+                                <div class="review-item__infor">
+                                    <div class="review-item__infor-main">
+                                        <div class="item-icon">
+                                            <img src="./assets/images/avatar.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="item-infor">
+                                            <div class="item-infor__name c-pink fw-bold">
+                                                Nguyễn Việt Phương
+                                            </div>
+                                            <div class="item-infor__status">
+                                                <img src="./assets/images/verified.png" class="img-fluid" alt="">
+                                                Đã mua sản phẩm
+                                            </div>
+                                            <div class="rating-start">
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__infor-time">
+                                        28/06/2021
+                                    </div>
+                                </div>
+                                <div class="review-item__product">
+                                    <div class="review-item__product-detail">
+                                        <p>
+                                            Đã mua: Xám L, Xanh lam L, Xám chì L
+                                        </p>
+                                    </div>
+                                    <div class="review-item__product-customer">
+                                        <p>
+                                            Ta nói chứ mua ưn gì đâu, chất vải mặc đẹp ghê, chồng mình mặc vào nhìn trẻ mà sang lắm, mặc dù cũng hơi già rồi nhưng chưa bao h mình có ý nghĩ phải ăn mặc sơ mi có cổ hay kiểu công sở chín chắn, haha và chồng mình cũng vậy, chất xịn mà có logo chữ coolmate ta nói nó xịn xò gì đâu, giá rẻ, mình có đổi size mà nv nói chuyện rất dễ nghe, thấy khá chuyên nghiệp, ưng lắm, sẽ ủng hộ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-item__infor">
+                                    <div class="review-item__infor-main">
+                                        <div class="item-icon">
+                                            <img src="./assets/images/avatar.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="item-infor">
+                                            <div class="item-infor__name c-pink fw-bold">
+                                                Nguyễn Việt Phương
+                                            </div>
+                                            <div class="item-infor__status">
+                                                <img src="./assets/images/verified.png" class="img-fluid" alt="">
+                                                Đã mua sản phẩm
+                                            </div>
+                                            <div class="rating-start">
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__infor-time">
+                                        28/06/2021
+                                    </div>
+                                </div>
+                                <div class="review-item__product">
+                                    <div class="review-item__product-detail">
+                                        <p>
+                                            Đã mua: Xám L, Xanh lam L, Xám chì L
+                                        </p>
+                                    </div>
+                                    <div class="review-item__product-customer">
+                                        <p>
+                                            Ta nói chứ mua ưn gì đâu, chất vải mặc đẹp ghê, chồng mình mặc vào nhìn trẻ mà sang lắm, mặc dù cũng hơi già rồi nhưng chưa bao h mình có ý nghĩ phải ăn mặc sơ mi có cổ hay kiểu công sở chín chắn, haha và chồng mình cũng vậy, chất xịn mà có logo chữ coolmate ta nói nó xịn xò gì đâu, giá rẻ, mình có đổi size mà nv nói chuyện rất dễ nghe, thấy khá chuyên nghiệp, ưng lắm, sẽ ủng hộ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-item__infor">
+                                    <div class="review-item__infor-main">
+                                        <div class="item-icon">
+                                            <img src="./assets/images/avatar.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="item-infor">
+                                            <div class="item-infor__name c-pink fw-bold">
+                                                Nguyễn Việt Phương
+                                            </div>
+                                            <div class="item-infor__status">
+                                                <img src="./assets/images/verified.png" class="img-fluid" alt="">
+                                                Đã mua sản phẩm
+                                            </div>
+                                            <div class="rating-start">
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <span>
+                                                    <img src="./assets/images/ico-rating-active.svg" class="img-fluid" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__infor-time">
+                                        28/06/2021
+                                    </div>
+                                </div>
+                                <div class="review-item__product">
+                                    <div class="review-item__product-detail">
+                                        <p>
+                                            Đã mua: Xám L, Xanh lam L, Xám chì L
+                                        </p>
+                                    </div>
+                                    <div class="review-item__product-customer">
+                                        <p>
+                                            Ta nói chứ mua ưn gì đâu, chất vải mặc đẹp ghê, chồng mình mặc vào nhìn trẻ mà sang lắm, mặc dù cũng hơi già rồi nhưng chưa bao h mình có ý nghĩ phải ăn mặc sơ mi có cổ hay kiểu công sở chín chắn, haha và chồng mình cũng vậy, chất xịn mà có logo chữ coolmate ta nói nó xịn xò gì đâu, giá rẻ, mình có đổi size mà nv nói chuyện rất dễ nghe, thấy khá chuyên nghiệp, ưng lắm, sẽ ủng hộ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn-more">
+                                    <span>
+                                        Xem thêm 
+                                        <svg width="16.54" height="8.35">
+                                            <path d="M12.56 7.95a.34.34 0 11-.47-.47l2.96-2.96H.64a.34.34 0 01-.34-.34.34.34 0 01.34-.33h14.41L12.1.87a.34.34 0 11.47-.47l3.54 3.54a.34.34 0 010 .47z" data-name="Path 67" fill="currentColor" stroke="currentColor" stroke-width=".6"></path>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -562,7 +991,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 
 
