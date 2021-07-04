@@ -225,13 +225,30 @@
                             -ms-transition: all 0.3s ease;
                             -o-transition: all 0.3s ease;
                             transition: all 0.3s ease;
-                            
-                            sub{
-                                padding: 2px;
-                                background: #fff;
-                                color: $c-orange;
-                                border-radius: 50%;
+                            span{
+                                margin-bottom: 5px;
+                                position: relative;
+                               > svg{
+                                    height: 22px;
+                                    width: 22px;
+                                }
+                                sub{
+                                    position: absolute;
+                                    bottom: -5px;
+                                    left: 12px;
+                                    width: 18px;
+                                    height: 14px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    // padding: 8px 8px;
+                                    background: #fff;
+                                    color: $c-orange;
+                                    border-radius: 100px;
+                                    font-size: 14px;
+                                }
                             }
+                            
                         }
                     }
                 }

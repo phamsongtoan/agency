@@ -971,6 +971,23 @@ ul {
     .dropdown-menu a:hover {
       background: #f3f4f7; }
 
+.my-gallery {
+  width: 100%;
+  float: left; }
+
+.my-gallery img {
+  width: 100%;
+  height: auto; }
+
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px; }
+
+.my-gallery figcaption {
+  display: none; }
+
 .collection-detail__wrapper .breadcrumb {
   margin-top: 5px;
   margin-bottom: 10px; }
@@ -1261,7 +1278,8 @@ ul {
       width: 85px;
       justify-content: center;
       align-items: center;
-      color: #fa6400; }
+      color: #fa6400;
+      font-weight: bold; }
 
 .collection-detail__wrapper .detail-content__right .detail-amount {
   margin-top: 25px; }
@@ -1405,10 +1423,12 @@ ul {
     padding: 20px; }
   .collection-detail__wrapper .detail-descreption__main img {
     max-width: 1000px;
-    margin: 0 auto;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px; }
+  .collection-detail__wrapper .detail-descreption__main a {
+    display: flex;
+    justify-content: center; }
   .collection-detail__wrapper .detail-descreption__main tbody img {
     max-width: 100%; }
   .collection-detail__wrapper .detail-descreption__main h4 {
@@ -1865,11 +1885,25 @@ ul {
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-        .heading-desktop__inner .navbar-site-tools ul li:last-child a sub {
-          padding: 2px;
-          background: #fff;
-          color: #fa6400;
-          border-radius: 50%; }
+        .heading-desktop__inner .navbar-site-tools ul li:last-child a span {
+          margin-bottom: 5px;
+          position: relative; }
+          .heading-desktop__inner .navbar-site-tools ul li:last-child a span > svg {
+            height: 22px;
+            width: 22px; }
+          .heading-desktop__inner .navbar-site-tools ul li:last-child a span sub {
+            position: absolute;
+            bottom: -5px;
+            left: 12px;
+            width: 18px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #fa6400;
+            border-radius: 100px;
+            font-size: 14px; }
 
 .heading-desktop__default {
   position: static;
