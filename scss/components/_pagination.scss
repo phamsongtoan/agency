@@ -6,6 +6,9 @@
     li:first-child {
         a {
             margin-right: 5px;
+            i{
+                font-size: 24px;
+            }
             &::after {
                 display: none;
             }
@@ -14,6 +17,9 @@
     li:last-child {
         a {
             margin-left: 5px;
+            i{
+                font-size: 24px;
+            }
             &::after {
                 display: none;
             }
@@ -26,20 +32,22 @@
             position: relative;
             font-size: 16px;
             color: $c-font;
+            font-weight: bold;
             margin-bottom: 0;
             background: transparent;
             border: none;
             &:hover {
-                color: #fff;
-                background: $c-green-up;
+                color: $c-orange;
+                background: none;
             }
            
         }
     }
     .active {
-        a {
+        a, .page-link {padding: 0 8px;
+            border-radius: 50%;
             color: #fff!important;
-           background: $c-green-up;
+           background: $c-orange;
         }
     }
 }

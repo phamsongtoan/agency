@@ -44,6 +44,37 @@ $(document).ready(function() {
       ]
     });
 
+     //
+     $('.banner-blog__slide').slick({
+      autoplay: false,
+      autoplaySpeed: 2000,
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      arrows: false,
+      dots: true,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          variableWidth: false,
+          arrows: false,
+          
+        }
+      },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            variableWidth: false,
+            arrows: false,
+          }
+        },
+    ]
+  });
+
     $('.product-news__slide').slick({
       autoplay: false,
       autoplaySpeed: 2000,
