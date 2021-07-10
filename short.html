@@ -21,184 +21,222 @@
 
 <body>
     <!-- MENU SITE -->
-    <div class="heading-desktop heading-desktop__default">
+    <div class="heading-desktop heading-desktop__default" id="navbar">
         <div class="container-fluid">
             <div class="heading-desktop__inner">
                 <nav class="navbar navbar-expand-lg">
                       <a class="navbar-brand" href="index.html">
                           <img src="./assets/images/logo.svg" class="img-fluid" alt="">
                       </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                         ...
                       </button>
-                      <div class="navbar-collapse offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="navbar-collapse offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                         <div class="offcanvas-header d-lg-none d-block">
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul>
+                            <ul id="accordionExample2">
                                 <li class="active" >
-                                    <a href="#"> 
-                                        <span> BTS
-                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                        </span>   
-                                    </a>
-                                    <ul class="nav-hidden">
-                                        <li>
-                                            <a href="#">
-                                                Coolmate x GBR Collection <span class="badge bg-green">New </span>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <a href="#"> 
+                                                <span> BTS
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span>   
                                             </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Care&Share
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a  href="#">
-                                        <span>Tủ đồ <sup>Mới</sup>
-                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                        </span> 
-                                        
-                                    </a>
-                                    <ul class="nav-hidden">
-                                        <li>
-                                            <a href="#">
-                                                Tủ đồ định kỳ - Cool sub <span class="badge bg-green">New </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Tủ đồ tạo sẵn
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a  href="collection.html">
-                                        <span>Áo <sup>SALE</sup>
-                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                    <div class="minimenu">
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/somi.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Áo sơ mi <span class="badge fs-14 bg-orange text-uppercase">HOT</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/somi.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Áo Polo
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/somi.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Áo thể thao <span class="badge fs-14 bg-orange text-uppercase">sale</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/somi.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Áo ngắn tay 
-                                            </div>
-                                        </a>
+                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                          </button>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1" data-bs-parent="#accordi1xample2">
+                                            <ul class="nav-hidden">
+                                                <li>
+                                                    <a href="#">
+                                                        Coolmate x GBR Collection <span class="badge bg-green">New </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Care&Share
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                  
+                                </li>
+                                <li>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2">
+                                            <a href="#">
+                                                <span>Tủ đồ <sup>Mới</sup>
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span> 
+                                            </a>
+                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                          </button>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample2">
+                                            <ul class="nav-hidden">
+                                                <li>
+                                                    <a href="#">
+                                                        Tủ đồ định kỳ - Cool sub <span class="badge bg-green">New </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Tủ đồ tạo sẵn
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading3">
+                                            <a  href="collection.html">
+                                                <span>Áo <sup>SALE</sup>
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            
+                                          </button>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample2">
+                                            <div class="minimenu">
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/somi.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Áo sơ mi <span class="badge fs-14 bg-orange text-uppercase">HOT</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/somi.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Áo Polo
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/somi.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Áo thể thao <span class="badge fs-14 bg-orange text-uppercase">sale</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/somi.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Áo ngắn tay 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                  
                                 </li>
                                 <li>
                                     <a  href="short.html"><span>Quần short</span> </a>
                                 </li>
                                 <li>
-                                    <a  href="underwear.html">
-                                        <span>Quần lót
-                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                    <div class="minimenu">
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/quan.svg" alt="">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading4">
+                                            <a  href="underwear.html">
+                                                <span>Quần lót
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                          </button>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample2">
+                                            <div class="minimenu">
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/quan.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Quần lót Trunk 
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/quan.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Quần lót Brief
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/quan.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Quần lót Boxer Brief
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/quan.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Quần lót khe moi <span class="badge fs-12 bg-green">NEW</span>
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Quần lót Trunk 
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/quan.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Quần lót Brief
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/quan.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Quần lót Boxer Brief
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/quan.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Quần lót khe moi <span class="badge fs-12 bg-green">NEW</span>
-                                            </div>
-                                        </a>
-                                    </div>
-    
+                                        </div>
+                                      </div>
                                 </li>
                                 <li>
-                                    <a  href="accessories.html">
-                                        <span>phụ kiện
-                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                        
-                                    </a>
-                                    <div class="minimenu">
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/phukien.svg" alt="">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading5">
+                                            <a  href="accessories.html">
+                                                <span>phụ kiện
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                          </button>
+                                        </h2>
+                                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
+                                            <div class="minimenu">
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/phukien.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Tất (vớ)
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/phukien.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Khẩu trang
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="minimenu-inner">
+                                                    <div class="minimenu-inner__img">
+                                                        <img src="./assets/images/phukien.svg" alt="">
+                                                    </div>
+                                                    <div class="minimenu-inner__detail fs-16">
+                                                        Phụ kiện khác
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Tất (vớ)
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/phukien.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Khẩu trang
-                                            </div>
-                                        </a>
-                                        <a href="#" class="minimenu-inner">
-                                            <div class="minimenu-inner__img">
-                                                <img src="./assets/images/phukien.svg" alt="">
-                                            </div>
-                                            <div class="minimenu-inner__detail fs-16">
-                                                Phụ kiện khác
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a  href="print.html"><span>coolxprint <sup>Mới</sub></span> </a>
-    
+                                        </div>
+                                      </div>
+                                    
                                 </li>
                                 <li>
                                     <a  href="blog.html"><span>coolblog</span> </a>
@@ -221,11 +259,14 @@
                               </li>
                               <li>
                                   <a href="#">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <div class="search-box position-relative">
+                                        <input type="text" />
+                                        <span></span>
+                                    </div>
                                   </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="cart.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M89.5 137.6c-10.2 0-18.4 8.2-18.5 18.3v.2L53.8 480.5c0 10.2 8.2 18.4 18.3 18.5h367.6c10.2 0 18.4-8.2 18.5-18.3v-.1L441 156.1c.1-10.2-8.1-18.4-18.3-18.5H89.5zm18.3 36.8h296.5l17.2 287.8h-331l17.3-287.8z"></path><path fill="currentColor" d="M366.5 170.8c10.2-.1 18.3-8.4 18.2-18.6v-.2c0-78-54-137-127.5-137S127.4 73.6 127.4 152c-.2 10.1 7.8 18.6 18 18.8 10.2.2 18.6-7.8 18.8-18v-.8c0-61.9 38.1-100.3 93.1-100.3 55 0 90.7 38 90.7 100.3-.2 10.1 7.9 18.5 18 18.7.1.1.3.1.5.1z"></path><path fill="currentColor" d="M172 213.6c-7.7.1-13.9 6.4-13.8 14.1v.1c0 59.3 41.1 104.1 96.9 104.1 55.9 0 98.7-44.6 98.7-104.1.2-7.7-5.9-14.1-13.7-14.3-7.7-.2-14.1 5.9-14.3 13.7v.6c0 47-29 76.2-70.7 76.2-41.8 0-69-28.8-69-76.2.2-7.7-6-14.1-13.7-14.2h-.4z" stroke="currentColor" stroke-width="9" stroke-miterlimit="10"></path></svg>
                                         <sub>0</sub>
@@ -247,15 +288,15 @@
             </div>
         </div>
     </div>
-    <!-- BODY -->
-    <div class="body-default__wrapper">
+     <!-- BODY -->
+     <div class="body-default__wrapper">
         <div class="section-item">
             <div class="container">
                 <div class="section-item__wrapper">
                     <div class="item-header">
                         <div class="item-header__cat">
                             <div class="item-header__cat-title fs-28 text-uppercase fw-bold">
-                                ÁO THUN NAM
+                                Quần Short
                             </div>
                             <div class="item-header__cat-main">
                                 <div class="btn-group">
@@ -303,7 +344,7 @@
                     </div>
                     <div class="item-main">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="collection-detail.html" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -345,7 +386,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="collection-detail.html" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -387,7 +428,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -429,7 +470,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -471,7 +512,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -513,7 +554,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -555,7 +596,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -597,7 +638,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="main-list">
                                     <a href="#" class="list-img">
                                         <img src="./assets/images/item.webp" class="img-fluid" alt="">
@@ -657,232 +698,7 @@
 
 
    
-    <!-- END BANNER -->
-        <!-- FOOTER -->
-    <footer >
-        <div class="footer-wrapper">
-            <div class="container">
-                <div class="footer-cover">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="footer-cover__inner">
-                                <div class="footer-logo">
-                                    <img src="./assets/images/logo.svg" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-cover__inner">
-                                <a href="#">
-                                    <div class="cover-img">
-                                        <svg height="512" width="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                            <switch>
-                                                <g>
-                                                    <path fill="currentColor" d="M487.5 146.5c-20.9-44.3-54-81.5-95.7-107.6-58-36.2-126.7-47.7-193.3-32.3C131.9 21.9 75.2 62.3 39 120.3 2.7 178.3-8.8 246.9 6.6 313.6s55.8 123.3 113.7 159.5c40.8 25.5 87.6 39 135.5 39h3.1c47.7-.6 94.1-14.4 134.3-39.8 11.7-7.4 15.1-22.8 7.7-34.5s-22.8-15.1-34.5-7.7c-32.3 20.5-69.7 31.6-108.1 32.1-39.4.5-77.9-10.4-111.5-31.3-96.3-60.4-125.7-187.8-65.4-284.1 29.2-46.7 74.8-79.2 128.4-91.5 53.6-12.4 108.8-3.1 155.5 26.1 33.6 21 60.2 50.9 77 86.5 16.4 34.7 22.8 73.2 18.5 111.2-1.5 13.7 8.3 26.1 22.1 27.6 13.7 1.5 26.1-8.3 27.6-22.1 5.3-47.2-2.7-95-23-138.1z"></path>
-                                                    <path fill="currentColor" d="M211.9 151.2c-9.8-9.8-25.6-9.8-35.4 0-13.6 13.6-22 31.7-23.5 51s4 38.5 15.4 54c26 35.3 57.1 66.4 92.4 92.4 13.9 10.2 30.6 15.7 47.7 15.7 2.1 0 4.2-.1 6.3-.2 19.2-1.5 37.3-9.8 51-23.5 9.8-9.8 9.8-25.6 0-35.4s-25.6-9.8-35.4 0c-10.7 10.7-27.9 12.1-40 3.2-31.2-23-58.7-50.5-81.7-81.7-8.9-12.1-7.6-29.3 3.2-40 9.8-9.9 9.8-25.8 0-35.5z"></path>
-                                                </g>
-                                            </switch>
-                                        </svg>
-                                    </div>
-                                    <div class="cover-infor">
-                                        <span class="text-uppercase fw-bold">hotline</span>
-                                        <span class="c-orange fw-bold fs-16">1900. 272 737
-                                        </span>
-                                        <span class="c-orange fw-bold fs-16">
-                                            (028. 7777. 2737)
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-cover__inner">
-                                <a href="#">
-                                    <div class="cover-img">
-                                        <svg height="512" width="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="currentColor" d="M392 418.5H240c-11.046 0-20-8.954-20-20s8.954-20 20-20h152c44.112 0 80-35.888 80-80v-164c0-44.112-35.888-80-80-80H120c-44.112 0-80 35.888-80 80v154c0 5.514 4.486 10 10 10h60c11.046 0 20 8.954 20 20s-8.954 20-20 20H50c-27.57 0-50-22.43-50-50v-154c0-66.168 53.832-120 120-120h272c66.168 0 120 53.832 120 120v164c0 66.168-53.832 120-120 120zm-212-20.021c0-11.046-8.954-20-20-20H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h140c11.046 0 20-8.954 20-20zm60 79.021c0-11.046-8.954-20-20-20H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h200c11.046 0 20-8.954 20-20zm89.236-225.558l96.855-73.512c8.798-6.678 10.518-19.224 3.839-28.022-6.676-8.797-19.223-10.518-28.022-3.839l-96.893 73.54c-28.552 21.774-68.422 21.788-96.981.037l-93.807-72.474c-8.741-6.753-21.303-5.142-28.055 3.6-6.753 8.741-5.142 21.301 3.6 28.055l93.855 72.512.099.075c21.429 16.345 47.109 24.515 72.786 24.515 25.664 0 51.324-8.164 72.724-24.487z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="cover-infor">
-                                        <span class="text-uppercase fw-bold">email</span>
-                                        <span class="c-orange fw-bold fs-16">cool@coolmate.com.me
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-cover__inner">
-                                <div class="social-grid">
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/facebook.svg" class="img" alt="">
-                                    </a>
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/youtube.svg" class="img" alt="">
-                                    </a>
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/ig.svg" class="img" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-main">
-                    <div class="accordion" id="accordionFooter">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterone">
-                                        <button class="accordion-button fs-16 fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterone" aria-expanded="true" aria-controls="collapseFooterone">
-                                            ĐỊA CHỈ LIÊN HỆ
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFooterone" class="accordion-collapse collapse" aria-labelledby="headingFooterone" data-bs-parent="#accordionFooter">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>
-                                                    <span class="fw-bold">HUB Hà Nội:</span>
-                                                     Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
-                                                </li>
-                                                <li>
-                                                    <span class="fw-bold">HUB Hà Nội:</span>
-                                                     Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFootertwo">
-                                    <button class="accordion-button fs-16 fw-bold text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFootertwo" aria-expanded="false" aria-controls="collapseFootertwo">
-                                        TRUY CẬP NHANH
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFootertwo" class="accordion-collapse collapse" aria-labelledby="headingFootertwo" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Câu chuyện về Coolmate</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chính sách khuyến mãi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Đổi trả 60 ngày</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chính sách giao hàng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Bảo mật và điều khoản sử dụng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Khách hàng hài lòng 100%</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Thành viên Coolmate</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Nhà máy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Cool Blog - Mặc đẹp sống chất</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterthree">
-                                    <button class="accordion-button fs-16 fw-bold text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterthree" aria-expanded="false" aria-controls="collapseFooterthree">
-                                        Sản phẩm
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFooterthree" class="accordion-collapse collapse" aria-labelledby="headingFooterthree" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Tủ đồ tạo sẵn</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Tủ đồ định kỳ Coolsub</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Coolxprint</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterFour">
-                                    <button class="accordion-button fs-16 text-uppercase fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterFour" aria-expanded="false" aria-controls="collapseFooterFour">
-                                        Chính sách
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFooterFour" class="accordion-collapse collapse" aria-labelledby="headingFooterFour" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Liên hệ</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Hỏi đáp</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Thông tin tài khoản</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Đơn hàng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Tủ đồ định kỳ của bạn</a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="footer-copyright__inner">
-                                <div class="footer-copyright__inner-content">
-                                    <div class="title text-uppercase fw-bold mb-2">
-                                        @ CÔNG TY TNHH FASTECH ASIA
-                                    </div>
-                                    <p>
-                                        Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="footer-copyright__inner">
-                                <div class="footer-copyright__inner-img">
-                                    <img src="./assets/images/copyright1.svg" class="img-fluid" alt="">
-                                    <img src="./assets/images/logoSaleNoti.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+ 
 
     <!-- JS -->
     <!-- <script src="js/particles.min.js"></script> -->

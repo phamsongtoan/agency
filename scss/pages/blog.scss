@@ -280,3 +280,39 @@
     }
 
 }
+
+
+
+//RESPONSIVE FOR IPAD
+@media (min-width: 768px) and (max-width: 1023px){
+    .banner-blog__slide .slide-item__content{
+        max-width: 50%;
+    }
+    .blog-container .blog-content .blog-category .module-title:before{
+        display: none;
+    }
+   
+
+}
+
+//RESPONSIVE FOR PHONE
+@media (max-width: 767px){
+    .banner-blog__slide .slide-item__content{
+        max-width: 100%;
+    }
+    .banner-blog__slide > .slick-dots{
+        left: 20px;
+        bottom: 0;
+    }
+    .blog-container .blog-content .blog-category {
+        display: none;
+    }
+    .banner-blog__slide .slide-item__content .content-inner{
+        justify-content: center;
+    }
+   
+    
+    
+   
+}
+

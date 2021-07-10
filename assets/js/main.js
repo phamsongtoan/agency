@@ -2,14 +2,26 @@
 $(document).ready(function() {
 
 
-    $(window).scroll(function(e) {
-      const scrollTop = $(this).scrollTop();
-      if (scrollTop > 40) {
-          $(".heading-desktop").addClass("sticky")
-      } else {
-          $(".heading-desktop").removeClass("sticky")
-      }
-  });
+  //   $(window).scroll(function(e) {
+  //     const scrollTop = $(this).scrollTop();
+  //     if (scrollTop > 40) {
+  //         $(".heading-desktop").addClass("sticky")
+  //     } else {
+  //         $(".heading-desktop").removeClass("sticky")
+  //     }
+  // });
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
   
     //SLIDE ABOUT
     $('.banner-slide__container').slick({
@@ -154,7 +166,7 @@ $('.section-feedback__slide').slick({
     breakpoint: 1024,
     settings: {
       slidesToScroll: 1,
-      slidesToShow: 1,
+      slidesToShow: 2,
       variableWidth: false,
       arrows: false,
       
@@ -178,33 +190,13 @@ $('.content-slide__show').slick({
   autoplaySpeed: 2000,
   slidesToScroll: 1,
   slidesToShow: 1,
-  arrows: true,
+  arrows: false,
   dots: false,
   fade: true,
+  focusOnSelect: true,
   centerMode: true,
   cssEase: 'linear',
   asNavFor: '.content-slide__scroll',
-  responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      variableWidth: false,
-      arrows: false,
-      
-    }
-  },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        variableWidth: false,
-        arrows: false,
-      }
-    },
-]
 });
 
 $('.content-slide__scroll').slick({
@@ -221,26 +213,57 @@ $('.content-slide__scroll').slick({
   nextArrow: $(".scroll-next"),
   asNavFor: '.content-slide__show',
   focusOnSelect: true,
+  // mobileFirst: true,
   responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        vertical: false,
+        verticalSwiping: false,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        variableWidth: false,
+        arrows: false,
+        
+      }
+    },
+    {
+      breakpoint: 1366,
+      settings: {
+        vertical: false,
+        verticalSwiping: false,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        variableWidth: false,
+        arrows: false,
+        
+      }
+    },
+  
   {
     breakpoint: 1024,
     settings: {
+      vertical: false,
+      verticalSwiping: false,
       slidesToScroll: 1,
-      slidesToShow: 1,
+      slidesToShow: 4,
       variableWidth: false,
       arrows: false,
       
     }
   },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        variableWidth: false,
-        arrows: false,
-      }
-    },
+  {
+    breakpoint: 768,
+    settings: {
+      vertical: false,
+      verticalSwiping: false,
+      slidesToScroll: 1,
+      slidesToShow: 4,
+      variableWidth: false,
+      arrows: false,
+    }
+  },
+
 ]
 });
 
