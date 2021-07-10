@@ -1,12 +1,14 @@
 .banner-default{
     &__bg{
         img{
-            max-height: 328.13px;
-            width: 100%;object-fit: cover;
+            // max-height: 328.13px;
+            width: 100%;
+            object-fit: cover;
         }
     }
 }
 .section-item{
+    margin-bottom: 30px;
     &__wrapper{
         .item-header{
             display: flex;
@@ -250,6 +252,9 @@
                             border-color: $c-orange;
                         }
                     }
+                    .free-shipping{
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
@@ -260,7 +265,7 @@
 //RESPONSIVE FOR IPAD
 @media (min-width: 768px) and (max-width: 1023px){
     .section-item__wrapper .item-header__cat-main .btn-group > button, .section-item__wrapper .item-header__cat-main .btn-group .btn .dropdown-toggle{
-        width: 130px;
+        width: 160px;
     }
    
 
@@ -292,6 +297,9 @@
     }
     .section-item__wrapper .item-main .main-list{
         text-align: center;
+    }
+    .section-item__wrapper .item-header__cat-main .btn-group > button, .section-item__wrapper .item-header__cat-main .btn-group .btn .dropdown-toggle{
+        width: 160px;
     }
     
    

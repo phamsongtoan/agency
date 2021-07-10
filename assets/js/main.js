@@ -2,14 +2,14 @@
 $(document).ready(function() {
 
 
-  //   $(window).scroll(function(e) {
-  //     const scrollTop = $(this).scrollTop();
-  //     if (scrollTop > 40) {
-  //         $(".heading-desktop").addClass("sticky")
-  //     } else {
-  //         $(".heading-desktop").removeClass("sticky")
-  //     }
-  // });
+    $(window).scroll(function(e) {
+      const scrollTop = $(this).scrollTop();
+      if (scrollTop > 40) {
+          $(".heading-desktop").addClass("sticky")
+      } else {
+          $(".heading-desktop").removeClass("sticky")
+      }
+  });
 
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
