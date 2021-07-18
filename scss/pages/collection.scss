@@ -181,14 +181,11 @@
                     .list-title{
                         text-decoration: none;
                         font-size: 13px;
-                        padding: 5px 0;
-                        line-height: 1.4;
+                        padding: 10px 0;
                         flex: 1;
-                        display: -webkit-box !important;
                         overflow: hidden;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        text-overflow: ellipsis
+                        font-weight: 500;
+                        max-height: 65px;
                     }
                     .list-review{
                         text-decoration: none;
@@ -227,6 +224,7 @@
                     .list-coupon{
                         margin-bottom: 5px;
                         margin-left: -3px;
+                        margin-left: 1px;
                         span{
                             padding: 3px 10px;
                             font-size: 12px;
@@ -292,15 +290,17 @@
         margin: 0;
         margin-bottom: 20px;
     }
-    .section-item__wrapper .item-main .main-list .list-content .list-price{
-        justify-content: center;
-    }
-    .section-item__wrapper .item-main .main-list{
-        text-align: center;
-    }
     .section-item__wrapper .item-header__cat-main .btn-group > button, .section-item__wrapper .item-header__cat-main .btn-group .btn .dropdown-toggle{
         width: 160px;
     }
-    
+    .section-item__wrapper .item-main .main-list .list-content .list-review__active{
+        font-size: 14px;
+    }
+    .section-item__wrapper .item-main .main-list .list-content .list-coupon span{
+        padding: 2px 5px;
+    }
+    .section-item__wrapper .item-main .main-list .list-content .list-inner{
+        font-size: 14px;
+    }
    
 }
