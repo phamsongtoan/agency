@@ -1,0 +1,27 @@
+.shipping{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    &__wrapper{
+        max-width: 900px;
+        margin: 0 auto;
+        p{
+            font-size: 16px;
+        }
+        li{
+            font-size: 16px;
+        }
+        img{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//RESPONSIVE FOR PHONE
+@media (max-width: 767px){ 
+    .shipping{
+        padding-bottom: 0;
+    }
+
+ }
+

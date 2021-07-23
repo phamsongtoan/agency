@@ -9,19 +9,42 @@ $(document).ready(function() {
       } else {
           $(".heading-desktop").removeClass("sticky")
       }
-  });
+});
+
+$(window).scroll(function(e) {
+  const scrollTop = $(this).scrollTop();
+  if (scrollTop > 500) {
+      $(".site-category").addClass("sticky-cate")
+  } else {
+      $(".site-category").removeClass("sticky-cate")
+  }
+});
+
+
 
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  const checkMobile = () => {
+    if($(window).width() <= 375) $(".heading-desktop").removeAttr('id')
+    else $(".heading-desktop").attr('id','navbar')
+  }
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
+  checkMobile()
+  if($(window).width() <= 375) return false;
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-100px";
+    document.getElementById("navbar").style.top = "-1100px";
   }
   prevScrollpos = currentScrollPos;
+  
 }
+
+
+
+checkMobile()
   
     //SLIDE ABOUT
     $('.banner-slide__container').slick({
@@ -56,10 +79,12 @@ window.onscroll = function() {
           {
             breakpoint: 768,
             settings: {
+            autoplay: false,
               slidesToScroll: 1,
               slidesToShow: 1,
               variableWidth: false,
               arrows: false,
+              dots: true,
             }
           },
       ]

@@ -1,0 +1,14 @@
+.refund-changed{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    &__wrapper{
+        max-width: 900px;
+        margin: 0 auto;
+        p{
+            font-size: 16px;
+        }
+        li{
+            font-size: 16px;
+        }
+    }
+}

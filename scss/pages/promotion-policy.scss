@@ -1,0 +1,90 @@
+.promotion-policy{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    &__wrapper{
+        .promotion-policy__cover{
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            .accordion{
+                .accordion-item{
+                    border: none;
+                    .accordion-header{
+                        .accordion-button{
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 20px;
+                            width: auto;
+                            &:after{
+                               display: none;
+                            }
+                            &:focus{
+                                border-color: transparent;
+                                box-shadow: none;
+                            }
+                        }
+                        .accordion-button:not(.collapsed){
+                            background: #fff;
+                            color: $c-orange;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+
+        }
+        .promotion-policy__main {
+            padding: 20px 50px;
+            .accordion{
+                .accordion-item{
+                    margin-bottom: 5px;
+                    border: 1px solid rgba(0,0,0,.125);
+                    .accordion-header{
+                        .accordion-button:not(.collapsed)::after{
+                            content: '\f068';
+                            margin-right: 4px;
+                        }
+                        .accordion-button{
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 20px;
+                            &:after{
+                                content: '\f067';
+                                background: none;
+                                font-family: $font-awesome;
+                            }
+                            
+                            &:focus{
+                                border-color: transparent;
+                                box-shadow: none;
+                            }
+                        }
+                        .accordion-button:not(.collapsed){
+                            background: #fff;
+                            color: $c-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .promotion-policy__wrapper .promotion-policy__cover{
+        display: none;
+    }
+ }
+
+//RESPONSIVE FOR PHONE
+@media (max-width: 767px){ 
+    .promotion-policy__wrapper .promotion-policy__cover{
+        display: none;
+    }
+    .promotion-policy__wrapper .promotion-policy__main{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+ }

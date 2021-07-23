@@ -17,9 +17,8 @@
   }
   
 
-
 .collection-detail{
-    margin-top: 140px;
+    margin-top: 40px;
     &__wrapper{
         .breadcrumb{
             margin-top: 5px;
@@ -830,6 +829,26 @@
         margin: 20px 0;
     }
     
+
+    .collection-detail__wrapper .breadcrumb{
+     position: fixed;
+     top: 0;
+     padding: 20px 0;
+     background: #fff;
+     z-index: 9;
+     width: 100%;
+     margin: 0;
+    }
+    .collection-detail__wrapper .breadcrumb ul{
+     margin: 0;
+     padding: 0;
+     width: 350px;
+     overflow-x: scroll;
+    }
+    .collection-detail{
+        margin-top: 62px;
+    }
+
     
    
 }

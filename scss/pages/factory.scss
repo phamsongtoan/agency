@@ -1,0 +1,156 @@
+.factory-bg{
+    position: relative;
+    height: 80vh;
+    &__thumnail{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:  url(../../assets/images/banner.jpg) no-repeat center center/ 100% 100%;
+        background-attachment: fixed;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0006;
+        z-index: -1;
+    }
+    &__content{
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        span{
+            display: inline-block;
+            background-color: #fff;
+            padding: 5px 13px;
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        &-title{
+            font-size: 44px;
+        }
+        &-sub{
+            font-size: 20px;
+        }
+    }
+}
+.factory{
+    &__wrapper{
+        .factory-main{
+            background-color: #0001;
+            &__left{
+                padding-top: 50px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 50px;
+                &-descreption{
+                    margin-top: 20px;
+                    p{
+                        line-height: 2.2;
+                        
+                    }
+                }
+            }
+            &__right{
+                height: 100%;
+                img{
+                    min-height: 100%;
+                }
+            }
+
+        }
+        .factory-card{
+            &__inner{
+                padding: 10px;
+                position: relative;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+
+                }
+                .factory-card__inner-img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    
+                }
+                .factory-card__inner-content{
+                    span{
+                        img{
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+            &__inner-white{
+                &::after{
+                    background-color: #ffffffb3;
+                }
+            }
+            &__inner-black{
+                &::after{
+                    background-color: #000000b3;
+                }
+                .factory-card__inner-content{
+                    .fs-32{
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+            &__inner-orange{
+                &::after{
+                    background-color: #fa6400b3;
+                }
+                .factory-card__inner-content{
+                    .fs-32{
+                        color: #fff;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
