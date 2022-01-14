@@ -1,305 +1,152 @@
         
 $(document).ready(function() {
+  //MENU
+  $('.toggle-menu').click(function () {
+    $(this).toggleClass('active');
+    $('#menu').toggleClass('open');
+  });
+
+  $(".btn-close").click(function(){
+    $("#menu").removeClass("open");
+    $(".toggle-menu").removeClass('active');
+  });
+
+  //TOGGLE
+
+  $(".navbar-nav li a:after").click(function(){
+    $(".navbar-nav li .menu-hidden").toggle();
+  });
+
+
+
+  // SPITLING
+
+  console.clear();
+  var s = Splitting();
 
 
     $(window).scroll(function(e) {
       const scrollTop = $(this).scrollTop();
-      if (scrollTop > 40) {
-          $(".heading-desktop").addClass("sticky")
+      if (scrollTop > 30) {
+          $(".heading-main").addClass("sticky")
       } else {
-          $(".heading-desktop").removeClass("sticky")
+          $(".heading-main").removeClass("sticky")
       }
   });
 
-  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
   
-    //SLIDE ABOUT
-    $('.banner-slide__container').slick({
+    //SLIDE BANNER
+    $('.banner-img__slide').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         slidesToScroll: 1,
-        slidesToShow: 3,
-        arrows: true,
-        variableWidth: true,
-        prevArrow: $(".banner-slide__arrows-prev"),
-        nextArrow: $(".banner-slide__arrows-next"),
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            variableWidth: false,
-            arrows: false,
-            
-          }
-        },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToScroll: 1,
-              slidesToShow: 1,
-              variableWidth: false,
-              arrows: false,
-            }
-          },
-      ]
+        slidesToShow: 1,
+        lazyLoad: 'ondemand',
+        nextArrow: false,
+        prevArrow: false,
+        speed: 1500,
+        asNavFor: '.banner-content__slide'
+
     });
 
-     //
-     $('.banner-blog__slide').slick({
-      autoplay: false,
-      autoplaySpeed: 2000,
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      arrows: false,
-      dots: true,
-      responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          variableWidth: false,
-          arrows: false,
-          
-        }
-      },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            variableWidth: false,
-            arrows: false,
-          }
-        },
-    ]
-  });
-
-    $('.product-news__slide').slick({
-      autoplay: false,
-      autoplaySpeed: 2000,
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      arrows: false,
-      dots: true,
-      responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          variableWidth: false,
-          arrows: false,
-          
-        }
-      },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            variableWidth: false,
-            arrows: false,
-          }
-        },
-    ]
-  });
-
-///SLIDE HOT
-
-  $('.product-hot__content').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    vertical: true,
-    verticalSwiping: true,
-    prevArrow: $(".product-hot__arrows-prev"),
-    nextArrow: $(".product-hot__arrows-next"),
-    responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
+      //SLIDE BANNER
+      $('.banner-content__slide').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
         slidesToScroll: 1,
         slidesToShow: 1,
-        variableWidth: false,
-        arrows: false,
-        
-      }
-    },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          variableWidth: false,
-          arrows: false,
-        }
-      },
-  ]
-});
-
-//FEEDBACK
-$('.section-feedback__slide').slick({
-  autoplay: false,
-  autoplaySpeed: 2000,
-  slidesToScroll: 2,
-  slidesToShow: 2,
-  arrows: false,
-  dots: true,
-  responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
-      slidesToScroll: 1,
-      slidesToShow: 2,
-      variableWidth: false,
-      arrows: false,
-      
-    }
-  },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        variableWidth: false,
-        arrows: false,
-      }
-    },
-]
-});
-
-//DETAIL 
-$('.content-slide__show').slick({
-  autoplay: false,
-  autoplaySpeed: 2000,
+        lazyLoad: 'ondemand',
+        nextArrow: false,
+        prevArrow: false,
+        asNavFor: '.banner-img__slide',
+    });
+    
+//SLIDE PARTNER
+$('.partner-slide-1').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
   slidesToScroll: 1,
-  slidesToShow: 1,
-  arrows: false,
-  dots: false,
-  fade: true,
-  focusOnSelect: true,
-  centerMode: true,
-  cssEase: 'linear',
-  asNavFor: '.content-slide__scroll',
-});
+  slidesToShow: 5,
+  lazyLoad: 'ondemand',
+  speed: 2100,
+  asNavFor: '.partner-slide-2',
 
-$('.content-slide__scroll').slick({
-  autoplay: false,
-  autoplaySpeed: 2000,
+});
+$('.partner-slide-2').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToScroll: 1,
+  slidesToShow: 5,
+  lazyLoad: 'ondemand',
+  speed: 1800,
+  asNavFor: '.partner-slide-1',
+  dots: true,
+  appendDots: $('.dots-custom'),
+});
+$('.case-slide').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
   slidesToScroll: 1,
   slidesToShow: 4,
-  arrows: true,
-  dots: false,
-  centerMode: true,
-  vertical: true,
-  verticalSwiping: true,
-  prevArrow: $(".scroll-prev"),
-  nextArrow: $(".scroll-next"),
-  asNavFor: '.content-slide__show',
-  focusOnSelect: true,
-  // mobileFirst: true,
-  responsive: [
-    {
-      breakpoint: 1440,
-      settings: {
-        vertical: false,
-        verticalSwiping: false,
-        slidesToScroll: 1,
-        slidesToShow: 4,
-        variableWidth: false,
-        arrows: false,
-        
-      }
-    },
-    {
-      breakpoint: 1366,
-      settings: {
-        vertical: false,
-        verticalSwiping: false,
-        slidesToScroll: 1,
-        slidesToShow: 4,
-        variableWidth: false,
-        arrows: false,
-        
-      }
-    },
-  
-  {
-    breakpoint: 1024,
-    settings: {
-      vertical: false,
-      verticalSwiping: false,
-      slidesToScroll: 1,
-      slidesToShow: 4,
-      variableWidth: false,
-      arrows: false,
-      
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      vertical: false,
-      verticalSwiping: false,
-      slidesToScroll: 1,
-      slidesToShow: 4,
-      variableWidth: false,
-      arrows: false,
-    }
-  },
+  lazyLoad: 'ondemand',
+  speed: 1800,
+  prevArrow: $(".btn-prev"),
+  nextArrow: $(".btn-next"),
+});
 
-]
+    // AOS
+    AOS.init({
+      once: false,
+      duration: 1200,
+      delay: 100,
+
+    });
+
 });
 
 
-  //ranger
+// SPITLING
+    // Cắt chữ bằng Splitting.js, mỗi chữ cái sẽ nằm trong 
+// thẻ span với class="char"
+new Splitting({ target: ".chozui"});
 
-  var slidertall = document.getElementById("myRangetall");
-  var outputtall = document.getElementById("tall");
-  outputtall.innerHTML = slidertall.value;
-
-  slidertall.oninput = function() {
-    outputtall.innerHTML = this.value;
-  }
-
-  //ranger
-
-  var sliderheight = document.getElementById("myRangeheight");
-  var outputheight = document.getElementById("height");
-  outputheight.innerHTML = sliderheight.value;
-
-  sliderheight.oninput = function() {
-    outputheight.innerHTML = this.value;
-  }
-
-
-    
-    //AOS
-    // AOS.init({
-    //   // once: true
-    // });
-
-  
+// Tạo hiệu ứng chữ chuyển động bằng anime.js 
+anime({
+	targets: ".chozui .tdt",
+	duration: 750,
+	translateY: ["1.1em", 0],
+	translateX: ["0.5em", 0],
+	rotateZ: [180, 0],
+	opacity: [0, 1],
+	easing: "easeOutExpo",
+	delay: (el, i) => 50 * i,
+	loop: true
+})
 
 
 
-});
+//ANIME.JS
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 
 

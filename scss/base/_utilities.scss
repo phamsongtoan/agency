@@ -13,7 +13,6 @@
 .mt-25px {
     margin-top: 25px;
 }
-
 .mb-25px {
     margin-bottom: 25px;
 }
@@ -192,11 +191,10 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1366px){
+@include Responsive(IPADPRO){
     .pb-60px {
         padding-bottom: 20px;
     }
-    
     .pt-70px{
         padding-top: 30px;
     }
@@ -210,7 +208,6 @@
     .pb-80px{
         padding-bottom: 40px;
     }
-    
     
     .mt-80px{
         margin-top: 40px;
@@ -227,7 +224,7 @@
    
 
 }
-@media (min-width: 768px) and (max-width: 1023px){
+@include Responsive(IPAD){
     
     .mt-60px {
         margin-top: 30px;
@@ -375,8 +372,7 @@
     }
 
 }
-
-@media (max-width: 767px) {
+@include Responsive(PHONE) {
     .mt-25px {
         margin-top: 15px;
     }
@@ -554,43 +550,3 @@
         padding-right: 0;
     }
 }
-
-//RESPONSIVE
-
-/* //1200px/16 */
-
-@media only screen and (max-width: 75em) {}
-
-@media (min-width: 75em) {}
-
-
-/* //900px/16 */
-
-@media only screen and (max-width: 56.25em) {}
-
-@media (min-width: 56.25em) {}
-
-
-/* 768 */
-
-@media only screen and (max-width: 48em) {}
-
-@media (min-width: 48em) {}
-
-
-/* 576 */
-
-@media only screen and (max-width: 36em) {}
-
-
-/*375 px*/
-
-@media only screen and (max-width: 23.4375em) {}
-
-//REPONSIVE IPAD
-@media (min-width: 48em) and (max-width: 64em) {
-    /* CSS */
-}
-
-//REPONSIVE IPAD PRO
-@media (min-width: 64em) and (max-width: 85.375em) {}

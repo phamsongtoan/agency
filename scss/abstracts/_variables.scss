@@ -1,23 +1,29 @@
 //COLOR TU PHUONG
-$c-orange: #fa6400;
 $c-font: #989898;
-$c-green: green;
 $c-green-down: #4E7A6C;
 $c-green-up: #00473C;
-$c-green-default: #7A9A01;
-$c-green-font:#CBE19F;
 $c-black: #333333;
 $c-pink: #f91e1e;
-$c-grey: #BDBDBD;
+$c-grey: #bfbfbf;
 $c-grey-up: #F8F8F8;
 $c-grey-upper: #E6E6E6;
 $c-white: #fff;
-$c-blue: #4A90E2;
-$c-blue-up: #00acff;
+
+//THE NEW GYM
+$c-green: rgb(52, 195, 143);
+$c-blue: #2a3042;
+$c-orange: rgb(241, 180, 76);
+
+//AL
+
 $c-active: #C4A053;
 $c-primary: #171717;
+$c-default: #556ee6;
 
 .c-primary{
+    color: $c-default;
+}
+.c-default{
     color: $c-primary;
 }
 .c-active{
@@ -29,17 +35,10 @@ $c-primary: #171717;
 .c-blue{
     color: $c-blue;
 }
-
-.c-blue-up{
-    color: $c-blue-up;
-}
 .c-black{
     color: $c-black;
 }
-.c-green-font{
-    color: $c-green-font;
 
-}
 .c-orange{
     color: $c-orange;
 }
@@ -72,9 +71,7 @@ $c-primary: #171717;
 .bg-font{
     background-color: $c-font;
 }
-.bg-green-default{
-    background-color: $c-green-default;
-}
+
 .bg-green{
     background-color: $c-green;
 }
@@ -96,9 +93,6 @@ $c-primary: #171717;
 
 .bg-blue{
     background-color: $c-blue;
-}
-.bg-blue-up{
-    background-color: $c-blue-up;
 }
 //FONT-SIZE
 
@@ -132,6 +126,9 @@ $c-primary: #171717;
 .fs-30{
     font-size: 30px;
 }
+.fs-32{
+    font-size: 32px;
+}
 .fs-34{
     font-size: 34px;
 }
@@ -156,7 +153,12 @@ $c-primary: #171717;
 .fs-75{
     font-size: 75px;
 }
-@media (min-width: 768px) and (max-width: 1023px){
+//FONT SIZE
+
+
+
+
+@include Responsive(IPAD){
     .fs-16{
         font-size: 14px;
     }
@@ -204,15 +206,14 @@ $c-primary: #171717;
     }
 
 }
-@media (max-width: 767px) {
-   
+@include Responsive(PHONE) {
     .fs-16{
         font-size: 14px;
     }
     .fs-18{
         font-size: 16px;
     }
-    .fs-24{
+    .fs-24{  
         font-size: 18px;
     }
     .fs-26{
@@ -252,7 +253,40 @@ $c-primary: #171717;
         font-size: 24px;
     }
 }
+
 //FONT-FAMILY
-$font-primary: 'Helvetica Neue';
-$font-default: 'SVN-Athena';
+
+$font-primary: 'Roboto', sans-serif;
+$font-default: 'Open Sans', sans-serif;
 $font-awesome: "FontAwesome";
+
+.fm-heading-1{
+    font-size: 48px;
+    font-family: $font-default;
+}
+.fm-heading-2{
+    font-size: 32px;
+    font-family: $font-default;
+    line-height: 4.4rem;
+
+}
+.fm-heading-3{
+    font-size: 18px;
+    font-family: $font-default;
+    line-height: 2.8rem;
+
+
+}
+.fm-heading-4{
+    font-size: 18px;
+    font-family: $font-default;
+    line-height: 2.8rem;
+
+
+}
+.fm-heading-5{
+    font-size: 16px;
+    font-family: $font-default;
+    line-height: 2.8rem;
+
+}

@@ -1,1488 +1,972 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AGENCY</title>
+    <title>The New Gym</title>
     <!-- <link rel="stylesheet" href="css/fullpage.css" /> -->
     <!-- <link href="css/lightbox.min.css" rel="stylesheet" /> -->
     <!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" /> -->
     <link rel="stylesheet" href="assets/css/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/splitting.css" />
     <link rel="stylesheet" href="assets/css/fresco.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/aos.css" />
-    <link rel="stylesheet" href="assets/font/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/font/athena/stylesheet.css"/>
-    <link rel="stylesheet" href="assets/font/helvetica/stylesheet.css"/>
+    <link
+      rel="stylesheet"
+      href="assets/font/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-</head>
+  </head>
 
-<body>
-    <!-- MENU SITE -->
-    <div class="heading-desktop" id="navbar">
-        <!-- <div class="site-topbar">
-            <a href="#">
-                Thứ 7 hàng tuần - MIỄN PHÍ VẬN CHUYỂN đơn từ 0đ
-            </a>
-        </div> -->
+  <body>
+    <div class="wrapper-body">
+      <!-- MENU SITE -->
+      <header class="heading-main" >
         <div class="container-fluid">
-            <div class="heading-desktop__inner">
-                <nav class="navbar navbar-expand-lg">
-                      <a class="navbar-brand" href="index.html">
-                          <img src="./assets/images/logo.svg" class="img-fluid" alt="">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                        ...
-                      </button>
-                      <div class="navbar-collapse offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                        <div class="offcanvas-header d-lg-none d-block">
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul id="accordionExample2">
-                                <li class="active" >
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingSale">
-                                            <a href="sale.html"> 
-                                                <span> Sale
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span>   
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSale" aria-expanded="false" aria-controls="collapseSale">
-                                          </button>
-                                        </h2>
-                                        <div id="collapseSale" class="accordion-collapse collapse " aria-labelledby="headingSale" data-bs-parent="#accordi1xample2">
-                                            <ul class="nav-hidden">
-                                                <li>
-                                                    <a href="sale.html">
-                                                        Coolmate Outlet ưu đãi 50% <span class="badge bg-orange">HOT </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="active" >
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading1">
-                                            <a href="collection-main.html"> 
-                                                <span> BTS
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span>   
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                          </button>
-                                        </h2>
-                                        <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1" data-bs-parent="#accordi1xample2">
-                                            <ul class="nav-hidden">
-                                                <li>
-                                                    <a href="collection-main.html">
-                                                        Coolmate x GBR Collection <span class="badge bg-green">New </span>
-                                                    </a>
-                                                </li>
-                                               
-                                            </ul>
-                                        </div>
-                                    </div>
-                                  
-                                </li>
-                                <li>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading2">
-                                            <a href="#">
-                                                <span>Tủ đồ <sup>Mới</sup>
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span> 
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                          </button>
-                                        </h2>
-                                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample2">
-                                            <ul class="nav-hidden">
-                                                <li>
-                                                    <a href="we-made.html">
-                                                        Tủ đồ tạo sẵn
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                      </div>
-                                </li>
-                                <li>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading3">
-                                            <a  href="collection.html">
-                                                <span>Áo <sup>SALE</sup>
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span>
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                            
-                                          </button>
-                                        </h2>
-                                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample2">
-                                            <div class="minimenu">
-                                                <a href="collection.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/somi.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Áo sơ mi <span class="badge fs-14 bg-orange text-uppercase">HOT</span>
-                                                    </div>
-                                                </a>
-                                                <a href="collection.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/somi.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Áo Polo
-                                                    </div>
-                                                </a>
-                                                <a href="collection.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/somi.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Áo thể thao <span class="badge fs-14 bg-orange text-uppercase">sale</span>
-                                                    </div>
-                                                </a>
-                                                <a href="collection.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/somi.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Áo ngắn tay 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                      </div>
-
-                                  
-                                </li>
-                                <li>
-                                    <a  href="short.html"><span>Quần short</span> </a>
-                                </li>
-                                <li>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading4">
-                                            <a  href="underwear.html">
-                                                <span>Quần lót
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span>
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                          </button>
-                                        </h2>
-                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample2">
-                                            <div class="minimenu">
-                                                <a href="underwear.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/quan.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Quần lót Trunk 
-                                                    </div>
-                                                </a>
-                                                <a href="underwear.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/quan.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Quần lót Brief
-                                                    </div>
-                                                </a>
-                                                <a href="underwear.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/quan.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Quần lót Boxer Brief
-                                                    </div>
-                                                </a>
-                                                <a href="underwear.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/quan.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Quần lót khe moi <span class="badge fs-12 bg-green">NEW</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </li>
-                                <li>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading5">
-                                            <a  href="accessories.html">
-                                                <span>phụ kiện
-                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                </span>
-                                            </a>
-                                          <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                          </button>
-                                        </h2>
-                                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
-                                            <div class="minimenu">
-                                                <a href="accessories.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/phukien.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Tất (vớ)
-                                                    </div>
-                                                </a>
-                                                <a href="accessories.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/phukien.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Khẩu trang
-                                                    </div>
-                                                </a>
-                                                <a href="accessories.html" class="minimenu-inner">
-                                                    <div class="minimenu-inner__img">
-                                                        <img src="./assets/images/phukien.svg" alt="">
-                                                    </div>
-                                                    <div class="minimenu-inner__detail fs-16">
-                                                        Phụ kiện khác
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                      </div>
-                                    
-                                </li>
-                                <li>
-                                    <a  href="blog.html"><span>coolblog</span> </a>
-    
-                                </li>
-                                <li>
-                                    <a  href="infor-size.html"><span>chọn size</span> </a>
-    
-                                </li>
-                            </ul>
-                        </div>
-                      </div>
-                      <div class="navbar-site-tools">
-                          <ul>
-                              <li>
-                                  <a href="account.html">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    Đăng nhập
-                                  </a>
-                              </li>
-                              <li>
-                                  <form >
-                                    <div class="search-box position-relative">
-                                        <input type="text" />
-                                        <span></span>
-                                    </div>
-                                  </form>
-                              </li>
-                              <li>
-                                <a href="cart.html">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M89.5 137.6c-10.2 0-18.4 8.2-18.5 18.3v.2L53.8 480.5c0 10.2 8.2 18.4 18.3 18.5h367.6c10.2 0 18.4-8.2 18.5-18.3v-.1L441 156.1c.1-10.2-8.1-18.4-18.3-18.5H89.5zm18.3 36.8h296.5l17.2 287.8h-331l17.3-287.8z"></path><path fill="currentColor" d="M366.5 170.8c10.2-.1 18.3-8.4 18.2-18.6v-.2c0-78-54-137-127.5-137S127.4 73.6 127.4 152c-.2 10.1 7.8 18.6 18 18.8 10.2.2 18.6-7.8 18.8-18v-.8c0-61.9 38.1-100.3 93.1-100.3 55 0 90.7 38 90.7 100.3-.2 10.1 7.9 18.5 18 18.7.1.1.3.1.5.1z"></path><path fill="currentColor" d="M172 213.6c-7.7.1-13.9 6.4-13.8 14.1v.1c0 59.3 41.1 104.1 96.9 104.1 55.9 0 98.7-44.6 98.7-104.1.2-7.7-5.9-14.1-13.7-14.3-7.7-.2-14.1 5.9-14.3 13.7v.6c0 47-29 76.2-70.7 76.2-41.8 0-69-28.8-69-76.2.2-7.7-6-14.1-13.7-14.2h-.4z" stroke="currentColor" stroke-width="9" stroke-miterlimit="10"></path></svg>
-                                        <sub>0</sub>
-                                    </span>
-                                    Giỏ hàng
-                                </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </nav>
-            </div>
-        </div>
-    </div>
-    <!-- HEADER -->
-    <div class="banner">
-        <div class="banner-bg">
-            <img src="./assets/images/banner.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="banner-content">
-            <div class="container">
-                <div class="sub-content c-orange fs-16 fw-bold">
-                    Delivering Happiness
-                </div>
-                <h1 class="heading-content fs-54">
-                    New Shopping <br> Experience for Men
-                </h1>
-            </div>
-            <div class="container">
-                <div class="banner-content__slide">
-                    <div class="banner-slide__arrows">
-                        <div class="banner-slide__arrows-prev">
-                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="banner-slide__arrows-next">
-                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="banner-slide__container">
-                        <div class="banner-slide__item">
-                            <a href="#">
-                                <img src="./assets/images/web_(1).jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="banner-slide__item">
-                            <a href="#">
-                                <img src="./assets/images/web_(1).jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="banner-slide__item">
-                            <a href="#">
-                                <img src="./assets/images/web_(1).jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="banner-slide__item">
-                            <a href="#">
-                                <img src="./assets/images/web_(1).jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="site-service">
-        <div class="container">
-            <div class="site-service__inner">
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="#" class="site-service__item">
-                            <div class="site-service__item-icon">
-                                <img src="./assets/images/olock.svg" alt="">
-                            </div>
-                            <div class="site-service__item-label fs-16">
-                                Giao hàng <span class="c-orange fw-bold"> 24h</span>
-                                ở HN & HCM 2-3 ngày ở tỉnh khác
-                            </div>
+          <div class="heading-wrapper p-4" data-aos="fade-down" >
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./assets/images/logo-footer.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <div class="d-lg-none d-md-block">
+                <button class="toggle-menu">
+                  <span></span>
+                </button>
+              </div>
+              <div class="nav-menu" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                    <a href="#">Về chúng tôi</a>
+                  </li>
+                  <li>
+                    <a href="#">Chức năng</a>
+                    <span class="btn-dow"></span>
+                    <ul class="menu-hidden row">
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
                         </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#" class="site-service__item">
-                            <div class="site-service__item-icon">
-                                <img src="./assets/images/olock.svg" alt="">
-                            </div>
-                            <div class="site-service__item-label fs-16">
-                                Giao hàng <span class="c-orange fw-bold"> 24h</span>
-                                ở HN & HCM 2-3 ngày ở tỉnh khác
-                            </div>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
                         </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#" class="site-service__item">
-                            <div class="site-service__item-icon">
-                                <img src="./assets/images/olock.svg" alt="">
-                            </div>
-                            <div class="site-service__item-label fs-16">
-                                Giao hàng <span class="c-orange fw-bold"> 24h</span>
-                                ở HN & HCM 2-3 ngày ở tỉnh khác
-                            </div>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
                         </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#" class="site-service__item">
-                            <div class="site-service__item-icon">
-                                <img src="./assets/images/olock.svg" alt="">
-                            </div>
-                            <div class="site-service__item-label fs-16">
-                                Giao hàng <span class="c-orange fw-bold"> 24h</span>
-                                ở HN & HCM 2-3 ngày ở tỉnh khác
-                            </div>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
                         </a>
-                    </div>
-                </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Sản phẩm</a>
+                    <span class="btn-dow"></span>
+                    <ul class="menu-hidden row">
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="col-md-6">
+                        <a href="#" class="p-3">
+                          <figure>
+                            <img
+                              src="./assets/images/uu-dai.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                          <div class="content-menuhidden">
+                            <h5>Quản lý Ưu đãi</h5>
+                            <p>
+                              Tổng hợp tất cả thông tin liên quan đến ưu đãi để
+                              doanh nghiệp dễ kiểm soát...
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Bảng giá</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="btn-customer">
+              <a href="/"><span>Tư vấn ngay </span> </a>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- END BANNER -->
-    <!-- BODY -->
-    <section class="section-product">
+      </header>
+      <!-- BANNER -->
+      <section class="site-banner">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="product-news">
-                        <h2 class="product-news__heading fs-28 text-uppercase fw-bold">
-                            Mới ra mắt
-                        </h2>
-                        <div class="product-news__slide">
-                            <a href="#" class="product-slide__item">
-                                <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-
-                            </a>
-                            <a href="#" class="product-slide__item">
-                                <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-
-                            </a>
-                            <a href="#" class="product-slide__item">
-                                <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="product-hot">
-                        <h2 class="product-hot__heading fs-28 text-uppercase fw-bold">
-                            NỔI BẬT
-                        </h2>
-                        <div class="product-hot__arrows">
-                            <div class="product-hot__arrows-prev">
-                                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                            </div>
-                            <div class="product-hot__arrows-next">
-                                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="product-hot__content">
-                            <div>
-                                <a href="#" class="product-hot__slide">
-                                    <div class="product-hot__item-img">
-                                        <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="product-hot__main">
-                                        <h3 class="product-hot__main-title fs-18 fw-bold">
-                                            Áo Polo nam Coolmax chống nhăn hiệu quả
-                                        </h3>
-                                        <div class="product-hot__main-infor">
-                                            <div class="product-hot__wrapper">
-                                                <div class="product-hot__price fs-24 c-orange fw-bold">
-                                                    349.000đ
-                                                </div>
-                                                <ul class="start-rating">
-                                                    <li class="active">
-                                                        <span class="start-rating__item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="start-rating__item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="start-rating__item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="start-rating__item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="start-rating__item"></span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-hot__sale c-blue">
-                                                <div class="product-hot__sale-heading">
-                                                    Mua 2 chỉ còn 390k/chiếc
-                                                </div>
-                                            </div>
-                                            <div class="product-hot__descreption">
-                                                <p>
-                                                    Mua quần thể thao ngắn nam Ultra chất lượng cao, thoáng mát khi mặc, phù hợp với vận động thể thao tại Coolmate.  ✓Giá tốt  ✓Giao hàng 4h  ✓Cod toàn quốc  ✓45 ngày đổi trả             
-                                                </p>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="product-hot__link">
-                                            <div class="product-hot__link-icon">
-                                                <img src="./assets/images/selec.svg" alt="">
-                                            </div>
-                                            <div class="product-hot__link-label fw-bold fs-16 text-uppercase fs-16">
-                                                Chọn mua
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#" class="product-hot__slide">
-                                    <div class="product-hot__item-img">
-                                        <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="product-hot__main">
-                                        <h3 class="product-hot__main-title fs-18 fw-bold">
-                                            Áo Polo nam Coolmax chống nhăn hiệu quả
-                                        </h3>
-                                        <div class="product-hot__main-infor">
-                                            <div class="product-hot__wrapper">
-                                                <div class="product-hot__price fs-24 c-orange fw-bold">
-                                                    349.000đ
-                                                </div>
-                                                <ul class="product-hot__rating">
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-hot__sale c-blue">
-                                                <div class="product-hot__sale-heading">
-                                                    Mua 2 chỉ còn 390k/chiếc
-                                                </div>
-                                            </div>
-                                            <div class="product-hot__descreption">
-                                                <p>
-                                                    Mua quần thể thao ngắn nam Ultra chất lượng cao, thoáng mát khi mặc, phù hợp với vận động thể thao tại Coolmate.  ✓Giá tốt  ✓Giao hàng 4h  ✓Cod toàn quốc  ✓45 ngày đổi trả             
-                                                </p>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="product-hot__link">
-                                            <div class="product-hot__link-icon">
-                                                <img src="./assets/images/selec.svg" alt="">
-                                            </div>
-                                            <div class="product-hot__link-label fw-bold fs-16 text-uppercase fs-16">
-                                                Chọn mua
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#" class="product-hot__slide">
-                                    <div class="product-hot__item-img">
-                                        <img src="./assets/images/IMG_1736_copy_375x425.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="product-hot__main">
-                                        <h3 class="product-hot__main-title fs-18 fw-bold">
-                                            Áo Polo nam Coolmax chống nhăn hiệu quả
-                                        </h3>
-                                        <div class="product-hot__main-infor">
-                                            <div class="product-hot__wrapper">
-                                                <div class="product-hot__price fs-24 c-orange fw-bold">
-                                                    349.000đ
-                                                </div>
-                                                <ul class="product-hot__rating">
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                    <li class="active">
-                                                        <span class="product-hot__rating-item"></span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-hot__sale c-blue">
-                                                <div class="product-hot__sale-heading">
-                                                    Mua 2 chỉ còn 390k/chiếc
-                                                </div>
-                                            </div>
-                                            <div class="product-hot__descreption">
-                                                <p>
-                                                    Mua quần thể thao ngắn nam Ultra chất lượng cao, thoáng mát khi mặc, phù hợp với vận động thể thao tại Coolmate.  ✓Giá tốt  ✓Giao hàng 4h  ✓Cod toàn quốc  ✓45 ngày đổi trả             
-                                                </p>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="product-hot__link">
-                                            <div class="product-hot__link-icon">
-                                                <img src="./assets/images/selec.svg" alt="">
-                                            </div>
-                                            <div class="product-hot__link-label fw-bold fs-16 text-uppercase fs-16">
-                                                Chọn mua
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- SECTION SUB CONTENT -->
-    <section class="sub-content">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <div class="sub-product">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="sub-product__item text-decoration-none">
-                                <div class="sub-product__item-demo">
-                                    <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="sub-product__item-title text-uppercase mb-2 fw-bold fs-18">
-                                    Áo thun - Áo Sơ mi
-                                </div>
-                                <div class="sub-product__item-count fs-16">
-                                    21+sản phẩm
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="sub-main">
-                    <div class="sub-main__wrapper">
-                        <div class="sub-main__subtitle fs-20">
-                            TỦ ĐỒ ĐỊNH KỲ
-                        </div>
-                        <h2 class="sub-main__title c-orange fs-75 fw-bold">
-                            Cool Sub
-                        </h2>
-                        <div class="sub-main__label fw-bold">
-                            Duy nhất tại Việt Nam chỉ từ <span class=" fs-20 c-orange">229.000đ</span> 
-                        </div>
-                        <div class="sub-main__infor">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="sub-main__infor-item">
-                                        <div class="infor-item__img mb-3">
-                                            <img src="./assets/images/box-1.svg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="infor-item__title fs-24 mb-2">
-                                            Chọn Loại Gói
-                                        </div>
-                                        <span class="infor-item__sub fs-16">
-                                            Cool sub có 3 loại gói: 1, 3, 6 hộp.
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sub-main__infor-item">
-                                        <div class="infor-item__img mb-3">
-                                            <img src="./assets/images/box-1.svg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="infor-item__title fs-24 mb-2">
-                                            Chọn Loại Gói
-                                        </div>
-                                        <span class="infor-item__sub fs-16">
-                                            Cool sub có 3 loại gói: 1, 3, 6 hộp.
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sub-main__infor-item">
-                                        <div class="infor-item__img mb-3">
-                                            <img src="./assets/images/box-1.svg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="infor-item__title fs-24 mb-2">
-                                            Chọn Loại Gói
-                                        </div>
-                                        <span class="infor-item__sub fs-16">
-                                            Cool sub có 3 loại gói: 1, 3, 6 hộp.
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sub-main__action">
-                            <div class="btn-inner">
-                                <a href="#">
-                                    tìm hiểu thêm
-                                </a>
-                            </div>
-                            <span>
-                                * Có thể thay đổi size màu và chu kỳ bất cứ lúc nào
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SECTION CARE -->
-    <section class="section-care">
-        <div class="container">
-            <div class="section-care__wrapper">
-                <div class="section-care__icon d-flex  justify-content-center">
-                    <img src="./assets/images/share.svg" alt="">
-                </div>
-                <div class="section-care__content text-center">
-                    <div class="section-care__content-quote mb-3 d-flex fw-bold  justify-content-center pb-2 fs-24">
-                        "Một công ty không cần phải lớn mạnh mới có thể làm điều có ý nghĩa"
-                    </div>
-                    <p>
-                        Coolmate xây dựng chương trình “Care & Share: For a Better Childhood” với mong muốn góp một phần nhỏ giúp đỡ trẻ em có hoàn cảnh khó khăn, giúp các em có thể đến trường, có cuộc sống tốt đẹp hơn.
-                    </p>
-                    <span>
-                        Với mỗi sản phẩm có logo Care&Share bán ra, Coolmate cam kết sẽ dành tặng 10% giá trị đơn hàng cho các em có hoàn cảnh khó khăn.
-                    </span>
-                </div>
-            </div>
-            <div class="section-care__donate">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="section-care__donate-inner">
-                            <div class="donate-number mb-2 fs-44 fw-bold">
-                                6.322
-                            </div>
-                            <div class="donate-desc fs-16px text-center">
-                                khách hàng <br>
-                                đã tham gia vào chương trình
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="section-care__donate-inner">
-                            <div class="donate-number mb-2 fs-44 fw-bold">
-                                6.322
-                            </div>
-                            <div class="donate-desc fs-16px text-center">
-                                khách hàng <br>
-                                đã tham gia vào chương trình
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="section-care__donate-inner">
-                            <div class="donate-number mb-2 fs-44 fw-bold">
-                                6.322
-                            </div>
-                            <div class="donate-desc fs-16px text-center">
-                                khách hàng <br>
-                                đã tham gia vào chương trình
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-inner d-flex justify-content-center">
-                <a href="#">
-                    cùng khám phá
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- SECTION FEEDBACK -->
-    <section class="section-feedback">
-        <div class="container">
-            <div class="section-feedback__heading fs-34 text-center text-uppercase fw-bold">
-                KHÁCH HÀNG NÓI VỀ COOLMATE
-            </div>
-            <div class="section-feedback__slide">
-                <div class="feedback-slide__item">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="slide-content">
-                                <div class="slide-content__main">
-                                    <ul class="start-rating">
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
-                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
-                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
-                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
-                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
-                                        khác
-                                        => doanh thu tăng trưởng
-                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
-                                        vụ lên nhé
-                                        Chúc các bạn thành công hơn nữa..
-                                    </p>
-                                </div>
-                                <div class="customer-name fw-bold c-orange fs-16">
-                                    Trung Nguyễn Hữu
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-0">
-                            <div class="slide-img">
-                                <a href="#"><img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt=""></a> 
-                                <div class="btn-inner">
-                                    <a href="#" class="text-uppercase bg-orange fs-10 fw-bold c-white">
-                                        xem sản phẩm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slide__item">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="slide-content">
-                                <div class="slide-content__main">
-                                    <ul class="start-rating">
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
-                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
-                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
-                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
-                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
-                                        khác
-                                        => doanh thu tăng trưởng
-                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
-                                        vụ lên nhé
-                                        Chúc các bạn thành công hơn nữa..
-                                    </p>
-                                </div>
-                                <div class="customer-name fw-bold c-orange fs-16">
-                                    Trung Nguyễn Hữu
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-0">
-                            <div class="slide-img">
-                                <a href="#"><img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt=""></a> 
-                                <div class="btn-inner">
-                                    <a href="#" class="text-uppercase bg-orange fs-10 fw-bold c-white">
-                                        xem sản phẩm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slide__item">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="slide-content">
-                                <div class="slide-content__main">
-                                    <ul class="start-rating">
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
-                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
-                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
-                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
-                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
-                                        khác
-                                        => doanh thu tăng trưởng
-                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
-                                        vụ lên nhé
-                                        Chúc các bạn thành công hơn nữa..
-                                    </p>
-                                </div>
-                                <div class="customer-name fw-bold c-orange fs-16">
-                                    Trung Nguyễn Hữu
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-0">
-                            <div class="slide-img">
-                                <a href="#"><img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt=""></a> 
-                                <div class="btn-inner">
-                                    <a href="#" class="text-uppercase bg-orange fs-10 fw-bold c-white">
-                                        xem sản phẩm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slide__item">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="slide-content">
-                                <div class="slide-content__main">
-                                    <ul class="start-rating">
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                        <li class="active">
-                                            <span class="start-rating__item"></span>
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Sản phẩm rất ưng ý. Đóng gói chuyên nghiệp.
-                                        Một người mua hàng thông thái, không chỉ cần 1 sp (sản phẩm) chất
-                                        lượng, đóng gói sản phẩm đẹp mà bên cạnh điều đó thái độ Phục Vụ
-                                        chuyên nghiệp là điều quan trọng nhất, thái độ phục vụ tốt sẽ làm
-                                        kh(khách hàng) hl (hài lòng), và sec(sẽ) giới thiệu cho nhiều người
-                                        khác
-                                        => doanh thu tăng trưởng
-                                        Các bạn đang làm rất tốt điều đó, cố gắng phát huy và nâng cấp phục
-                                        vụ lên nhé
-                                        Chúc các bạn thành công hơn nữa..
-                                    </p>
-                                </div>
-                                <div class="customer-name fw-bold c-orange fs-16">
-                                    Trung Nguyễn Hữu
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-0">
-                            <div class="slide-img">
-                                <a href="#"><img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt=""></a> 
-                                <div class="btn-inner">
-                                    <a href="#" class="text-uppercase bg-orange fs-10 fw-bold c-white">
-                                        xem sản phẩm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   <!-- SECTION CAM KET -->
-    <section class="section-service">
-        <div class="container">
-            <div class="wrapper-content">
-                <div class="service-logo">
-
-                </div>
-                <div class="service-subheading fw-bold fs-20 text-center">
-                    Trải nghiệm mua sắm <span class="c-orange ">Coolmate</span> 
-                </div>
-                <div class="service-heading fw-bold fs-34 text-center">
-                    Cam Kết 100% <span class=" c-orange">Hài Lòng</span> 
-                </div>
-                <div class="service-content">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button fs-16 fs-18" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                01. Liên hệ Chăm sóc khách hàng dễ dàng
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+          <div class="site-banner__wrapper">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-11">
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-6" data-aos="fade-right" >
+                    <div class="banner-content">
+                      <div class="banner-content__slide">
+                        <div class="item-slide">
+                          <div class="item-slide__wrapper">
+                            <h2 class="fm-heading-2">
+                              Social Loyalty -
+                              <strong> Giải pháp chăm sóc khách hàng </strong>
+                              tự động hoá trên Đa kênh mạng xã hội 
+                            </h2>
+                            <div class="description mt-4">
                               <p>
-                                Tổng đài Coolmate với số Hotline 1900272737 rất dễ tìm kiếm và xuất hiện khắp mọi nơi từ Website, Email, Fanpage, trong nhãn mác, bao bì đóng gói... Hơn thế nữa, đội ngũ chăm sóc khách hàng Coolmate cam kết 100% cuộc gọi sẽ được trả lời, nếu như bị gọi nhỡ (do quá tải) sẽ được gọi lại ngay lập tức.
-
-                                Tổng đài CSKH Coolmate sẽ thực sự là nơi luôn luôn nghe khi khách hàng gọi, theo đúng ý nghĩa của 1 tổng đài chăm sóc khách hàng thực sự.
-                                
-                                Ngoài ra khách hàng có thể liên hệ với Coolmate thông qua rất nhiều kênh khác nhau như: Email, Chat, Để lại đánh giá, bình luận ở các kênh mạng xã hội của Coolmate.
+                                Tích hợp các tính năng tạo thẻ E-membership, đổi
+                                ưu đãi online, mua sắm tinh gọn, thanh toán, vận
+                                chuyển... trực tiếp vào Zalo OA & Fanpage của
+                                Doanh Nghiệp.
                               </p>
                             </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button fs-16 fs-18 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                02. Liên hệ Chăm sóc khách hàng dễ dàng
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p>
-                                    Tổng đài Coolmate với số Hotline 1900272737 rất dễ tìm kiếm và xuất hiện khắp mọi nơi từ Website, Email, Fanpage, trong nhãn mác, bao bì đóng gói... Hơn thế nữa, đội ngũ chăm sóc khách hàng Coolmate cam kết 100% cuộc gọi sẽ được trả lời, nếu như bị gọi nhỡ (do quá tải) sẽ được gọi lại ngay lập tức.
-    
-                                    Tổng đài CSKH Coolmate sẽ thực sự là nơi luôn luôn nghe khi khách hàng gọi, theo đúng ý nghĩa của 1 tổng đài chăm sóc khách hàng thực sự.
-                                    
-                                    Ngoài ra khách hàng có thể liên hệ với Coolmate thông qua rất nhiều kênh khác nhau như: Email, Chat, Để lại đánh giá, bình luận ở các kênh mạng xã hội của Coolmate.
-                                  </p>
+                            <div class="btn-exp mt-md-5 mt-4 pb-4">
+                              <a href="#">
+                                <span>Tham gia ngay</span>
+                              </a>
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button fs-16 fs-18 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                03. Liên hệ Chăm sóc khách hàng dễ dàng
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p>
-                                    Tổng đài Coolmate với số Hotline 1900272737 rất dễ tìm kiếm và xuất hiện khắp mọi nơi từ Website, Email, Fanpage, trong nhãn mác, bao bì đóng gói... Hơn thế nữa, đội ngũ chăm sóc khách hàng Coolmate cam kết 100% cuộc gọi sẽ được trả lời, nếu như bị gọi nhỡ (do quá tải) sẽ được gọi lại ngay lập tức.
-    
-                                    Tổng đài CSKH Coolmate sẽ thực sự là nơi luôn luôn nghe khi khách hàng gọi, theo đúng ý nghĩa của 1 tổng đài chăm sóc khách hàng thực sự.
-                                    
-                                    Ngoài ra khách hàng có thể liên hệ với Coolmate thông qua rất nhiều kênh khác nhau như: Email, Chat, Để lại đánh giá, bình luận ở các kênh mạng xã hội của Coolmate.
-                                  </p>
+                        <div class="item-slide">
+                          <div class="item-slide__wrapper">
+                            <h2 class="fm-heading-2">
+                              Social Loyalty -
+                              <strong> Giải pháp chăm sóc khách hàng </strong>
+                              tự động hoá trên Đa kênh mạng xã hội 
+                            </h2>
+                            <div class="description mt-4">
+                              <p>
+                                Tích hợp các tính năng tạo thẻ E-membership, đổi
+                                ưu đãi online, mua sắm tinh gọn, thanh toán, vận
+                                chuyển... trực tiếp vào Zalo OA & Fanpage của
+                                Doanh Nghiệp.
+                              </p>
+                            </div>
+                            <div class="btn-exp mt-md-5 mt-4 pb-4">
+                              <a href="#">
+                                <span>Tham gia ngay</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-slide">
+                          <div class="item-slide__wrapper">
+                            <h2 class="fm-heading-2">
+                              Social Loyalty -
+                              <strong> Giải pháp chăm sóc khách hàng </strong>
+                              tự động hoá trên Đa kênh mạng xã hội 
+                            </h2>
+                            <div class="description mt-4">
+                              <p>
+                                Tích hợp các tính năng tạo thẻ E-membership, đổi
+                                ưu đãi online, mua sắm tinh gọn, thanh toán, vận
+                                chuyển... trực tiếp vào Zalo OA & Fanpage của
+                                Doanh Nghiệp.
+                              </p>
+                            </div>
+                            <div class="btn-exp mt-md-5 mt-4 pb-4">
+                              <a href="#">
+                                <span>Tham gia ngay</span>
+                              </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="btn-inner__trans d-flex justify-content-center">
-                        <a href="#" class="fw-bold">
-                            xem chi tiết
-                        </a>
                     </div>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-left" >
+                    <div class="banner-img">
+                      <div class="banner-img__slide">
+                        <figure>
+                          <img
+                            src="./assets/images/cnvloyalty-banner-2021-11-09-1.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/cnvloyalty-banner-2021-11-09-1.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/cnvloyalty-banner-2021-11-09-1.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- SECTION NEWS -->
-    <section class="section-news">
-       <div class="row">
-           <div class="col-lg-2 pe-lg-0">
-               <div class="section-news__slogan">
-                   <h2 class="heading-font fs-48 fw-bold">
-                       Mặc <span class="c-orange">Đẹp</span>
-                       <br>
-                       Sống <span class="c-orange"> Đẹp</span>
-                   </h2>
-                   <div class="heading-sub fs-24 fw-bold">
-                       cùng <span class="c-orange fs-30">Coolmate</span>
-                   </div>
-               </div>
-
-           </div>
-           <div class="col-lg-10 ps-lg-0">
-               <div class="row">
-                   <div class="col-md-3">
-                       <div class="news-item">
-                           <a href="#" class="news-item__img">
-                               <img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt="">
-                           </a>
-                           <a href="#" class="news-item__content">
-                                <div class="title">
-                                    Top 10 mẫu giày lười đẹp nhất cho nam giới 2021
-                                </div>
-                                <div class="btn-detail text-uppercase">
-                                    XEM CHI TIẾT <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                                </div>
-                            </a>
-                       </div>
-                   </div>
-                   <div class="col-md-3">
-                    <div class="news-item">
-                        <a href="#" class="news-item__img">
-                            <img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt="">
-                        </a>
-                        <a href="#" class="news-item__content">
-                             <div class="title">
-                                 Top 10 mẫu giày lười đẹp nhất cho nam giới 2021
-                             </div>
-                             <div class="btn-detail text-uppercase">
-                                 XEM CHI TIẾT <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                             </div>
-                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="news-item">
-                        <a href="#" class="news-item__img">
-                            <img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt="">
-                        </a>
-                        <a href="#" class="news-item__content">
-                             <div class="title">
-                                 Top 10 mẫu giày lười đẹp nhất cho nam giới 2021
-                             </div>
-                             <div class="btn-detail text-uppercase">
-                                 XEM CHI TIẾT <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                             </div>
-                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="news-item">
-                        <a href="#" class="news-item__img">
-                            <img src="./assets/images/Coolmate_modalbriefboxerden-0781.jpg" class="img-fluid" alt="">
-                        </a>
-                        <a href="#" class="news-item__content">
-                             <div class="title">
-                                 Top 10 mẫu giày lười đẹp nhất cho nam giới 2021
-                             </div>
-                             <div class="btn-detail text-uppercase">
-                                 XEM CHI TIẾT <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                             </div>
-                         </a>
-                    </div>
-                </div>
-               </div>
-           </div>
-       </div>
-    </section>
-    <!-- SECTION STORY -->
-    <section class="section-story">
+      </section>
+      <!-- BANNER-BOTTOM -->
+      <section class="site-banner-bottom">
         <div class="container">
-            <div class="section-story__wrapper">
-                <h2 class=" heading-font section-story__heading fs-48 fw-bold">
-                    <span class="fs-60 text-webkit">Câu Chuyện</span>  về <span class="c-orange fs-60">Coolmate</span> 
-                 </h2>
-                <div class="story-content">
-                    <div class="story-content__img">
-                        <img src="./assets/images/about-img.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="story-content__main">
-                        <div class="hastag fs-26 c-orange fw-bold">
-                            #coolmate
-                        </div>
-                        <div class="descrep">
-                            <p>
-                                Chiếc hộp CoolMate sẽ đơn giản hoá cuộc sống hằng ngày của các anh với 10 items về tủ đồ nhưng giá chỉ dưới 500.000/box. Hơn nữa, CoolMate sử dụng cotton là chất liệu chính cho các sản phẩm, phù hợp với xứ sở nhiệt đới, giúp phái nam luôn thoải mái trong mọi hoạt động. Với chúng tôi, khách hàng cũng chính là mate - là người giúp chúng tôi hiện thực hoá giấc mơ được đồng hành cùng các bạn trong cuộc sống hằng ngày, hiểu bạn và đem lại cho bạn những gì tốt nhất!
-                            </p>
-                            <div class="btn-inner">
-                                <a href="#">
-                                     đặt ngay hôm nay
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="banner-bottom__wrapper">
+            <div class="row gx-5">
+              <div class="col-xl-3 col-md-6" data-aos="fade-down"  data-aos-delay="700" >
+                <div class="item-bottom">
+                  <figure>
+                    <img
+                      src="./assets/images/loyalty-app-brand.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="content">
+                    <h5 class="fm-heading-5 fw-bold my-3">The NewGym</h5>
+                    <p>
+                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                    </p>
+                  </div>
+                  <div class="btn-scroll">
+                    <a href="#">
+                      <span> Xem thêm </span>
+                    </a>
+                  </div>
                 </div>
-                <div class="story-cover">
-                    <div class="story-cover__content">
-                        <p>
-                            Câu chuyện được sinh ra từ tủ đồ của các cánh mày râu, nơi được cho là ‘1 màu’, ‘đơn điệu’ và ‘ít được chăm chút’. Bởi lẽ thực tế, việc mua sắm đối với các anh là không thường xuyên, ngại phải đi nhiều nơi để mua đủ những đồ mình muốn, đặc biệt là những món đồ cơ bản nhất. Coolmate hiểu được rằng những chiếc áo phông, đôi tất hay quần lót sẽ không bao giờ thiếu vắng trong tủ đồ và bằng chính sứ mệnh của mình, CoolMate sẽ dần thay đổi thói quen của các anh bằng cách thức mua hàng tiện lợi nhất và những sản phẩm chất lượng tốt nhất.
-                        </p>
-                        <div class="btn-detail">
-                            <a href="#" class="c-orange text-decoration-none fw-bold    ">
-                                Xem chi tiết <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="story-cover__img">
-                        <img src="./assets/images/about-box@2x.png" class="img-fluid" alt="">
-                    </div>
-                    
+              </div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-down"  data-aos-delay="500">
+                <div class="item-bottom">
+                  <figure>
+                    <img
+                      src="./assets/images/loyalty-app-brand.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="content">
+                    <h5 class="fm-heading-5 fw-bold my-3">The NewGym</h5>
+                    <p>
+                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                    </p>
+                  </div>
+                  <div class="btn-scroll">
+                    <a href="#">
+                      <span> Xem thêm </span>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-down"  data-aos-delay="400">
+                <div class="item-bottom">
+                  <figure>
+                    <img
+                      src="./assets/images/loyalty-app-brand.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="content">
+                    <h5 class="fm-heading-5 fw-bold my-3">The NewGym</h5>
+                    <p>
+                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                    </p>
+                  </div>
+                  <div class="btn-scroll">
+                    <a href="#">
+                      <span> Xem thêm </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6" data-aos="fade-down"  data-aos-delay="700">
+                <div class="item-bottom">
+                  <figure>
+                    <img
+                      src="./assets/images/loyalty-app-brand.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="content">
+                    <h5 class="fm-heading-5 fw-bold my-3">The NewGym</h5>
+                    <p>
+                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                    </p>
+                  </div>
+                  <div class="btn-scroll">
+                    <a href="#">
+                      <span> Xem thêm </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <!-- SITE PARTNER -->
+      <section class="site-partner mt-lg-0 mt-md-5 mt-4" data-aos="fade-up">
+        <div class="container">
+          <div class="site-partner__wrapper">
+            <div class="text-center">
+              <h2 class="fm-heading-2">
+                Hơn 500+ doanh nghiệp đã sở hữu Loyalty App
+              </h2>
+              <span class="sub-title c-grey fs-16 mt-3">
+                Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết
+                kiệm
+              </span>
+              <div class="line my-4"></div>
+            </div>
+            <div class="partner-slide-1 mt-md-5 pt-md-4 pt-0 mt-4">
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="partner-slide-2 mt-md-5 pt-md-4 pt-0 mt-4">
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="partner-slide__item">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./assets/images/group-3319.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="dots-custom">
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- SITE CASE -->
+        <section class="site-case mt-md-5 mt-4 py-4" data-aos="fade-up">
+          <div class="container">
+            <div class="site-case__wrapper py-md-4 py-3">
+              <div class="text-center">
+                <h2 class="fm-heading-2">Case study điển hình</h2>
+                <div class="line my-4"></div>
+              </div>
+              <div class="position-relative mt-md-5 mt-4">
+                <div class="btn-prev">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+                <div class="btn-next">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="case-slide py-4">
+                  <div class="case-item">
+                    <figure>
+                      <img src="./assets/images/photo-3-1626066781473499933800.jpeg" class="img-fluid" alt="">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img src="./assets/images/photo-3-1626066781473499933800.jpeg" class="img-fluid" alt="">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img src="./assets/images/photo-3-1626066781473499933800.jpeg" class="img-fluid" alt="">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img src="./assets/images/photo-3-1626066781473499933800.jpeg" class="img-fluid" alt="">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img src="./assets/images/photo-3-1626066781473499933800.jpeg" class="img-fluid" alt="">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+      <!-- SITE FEATURE -->
+      <section class="site-feature mt-md-5 mt-4">
+        <div class="container">
+          <div class="site-feature__wrapper">
+            <div class="text-center">
+              <h2 class="fm-heading-2">Những tính năng nổi bật</h2>
+              <div class="line my-4"></div>
+            </div>
+            <div class="main-feature my-md-5 my-4 py-md-5 py-4 ">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-11">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-3" data-aos="fade-right" data-aos-delay="1200">
+                      <div class="main-feature__wrapper">
+                        <div class="row gy-5" >
+                          <div class="col-12" >
+                            <div class="feature-item text-center">
+                              <figure>
+                                <img
+                                  src="./assets/images/icon-tich-diem.png"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </figure>
+                              <h3 class="fm-heading-3 text-uppercase">
+                                Tích điểm, tạo ưu đãi, đổi thưởng
+                              </h3>
+                              <p class="my-4">
+                                Tự động hoá quá trình thông báo ưu đãi đến khách
+                                hàng, sử dụng ưu đãi và tích điểm. ...
+                              </p>
+                              <div class="see-more">
+                                <a href="#"> <span>Xem thêm</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="feature-item text-center">
+                              <figure>
+                                <img
+                                  src="./assets/images/icon-tich-diem.png"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </figure>
+                              <h3 class="fm-heading-3 text-uppercase">
+                                Tích điểm, tạo ưu đãi, đổi thưởng
+                              </h3>
+                              <p class="my-4">
+                                Tự động hoá quá trình thông báo ưu đãi đến khách
+                                hàng, sử dụng ưu đãi và tích điểm. ...
+                              </p>
+                              <div class="see-more">
+                                <a href="#"> <span>Xem thêm</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-out">
+                      <div class="feature-main__wrapper">
+                        <figure class="feature-cover text-center">
+                          <img
+                            src="./assets/images/giai-phap-doanh-nghiep.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-left" data-aos-delay="1200">
+                      <div class="main-feature__wrapper">
+                        <div class="row gy-5">
+                          <div class="col-12">
+                            <div class="feature-item text-center">
+                              <figure>
+                                <img
+                                  src="./assets/images/icon-tich-diem.png"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </figure>
+                              <h3 class="fm-heading-3 text-uppercase">
+                                Tích điểm, tạo ưu đãi, đổi thưởng
+                              </h3>
+                              <p class="my-4">
+                                Tự động hoá quá trình thông báo ưu đãi đến khách
+                                hàng, sử dụng ưu đãi và tích điểm. ...
+                              </p>
+                              <div class="see-more">
+                                <a href="#"> <span>Xem thêm</span></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="feature-item text-center">
+                              <figure>
+                                <img
+                                  src="./assets/images/icon-tich-diem.png"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </figure>
+                              <h3 class="fm-heading-3 text-uppercase">
+                                Tích điểm, tạo ưu đãi, đổi thưởng
+                              </h3>
+                              <p class="my-4">
+                                Tự động hoá quá trình thông báo ưu đãi đến khách
+                                hàng, sử dụng ưu đãi và tích điểm. ...
+                              </p>
+                              <div class="see-more">
+                                <a href="#"> <span>Xem thêm</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SPITLING -->
+      <!-- <h1 class="blur-it" data-splitting>Blur Effect</h1>
+    <h1 class="spread-out" data-splitting>Spread Effect</h1> -->
+    </div>
+
     <!-- FOOTER -->
-    <footer >
-        <div class="footer-wrapper">
-            <div class="container">
-                <div class="footer-cover">
+    <footer>
+      <div class="footer-wrapper pt-md-5 pt-4 mt-md-5 mt-4" data-aos="fade-up">
+        <div class="container">
+          <div class="footer-main  py-md-5 py-4">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="footer-main__info">
+                  <figure class="mb-md-5 mb-4">
+                    <img
+                      src="./assets/images/logo-footer.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="my-4 info-item">
+                    <h3 class="fm-heading-3 fw-bold my-md-4 my-3">
+                      Trung tâm kinh doanh Hồ Chí Minh
+                    </h3>
+                    <ul>
+                      <li>
+                        <span
+                          >Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà
+                          Đông, TP. Hà Nội</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà
+                          Đông, TP. Hà Nội</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="my-4 info-item">
+                    <h3 class="fm-heading-3 fw-bold my-md-4 my-3">
+                      Trung tâm kinh doanh Hồ Chí Minh
+                    </h3>
+                    <ul>
+                      <li>
+                        <span
+                          >Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà
+                          Đông, TP. Hà Nội</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà
+                          Đông, TP. Hà Nội</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info-social">
+                    <ul>
+                      <li>
+                        <a href="#" class="fb">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="tw">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="utube">
+                          <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="footer-main__map">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="map-item">
+                        <h4 class="fm-heading-4 my-md-4 my-3 fw-bold">TCNV HOLDINGS
+                        </h4>
+                        <ul>
+                          <li>
+                            <a href="#">Về chúng tôi</a>
+                          </li>
+                          <li>
+                            <a href="#">Bảng giá</a>
+                          </li>
+                          <li>
+                            <a href="#">Case study</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="map-item">
+                        <h4 class="fm-heading-4 my-md-4 my-3 fw-bold">Trung tâm hỗ trợ
+                        </h4>
+                        <ul>
+                          <li>
+                            <a href="#">Về chúng tôi</a>
+                          </li>
+                          <li>
+                            <a href="#">Bảng giá</a>
+                          </li>
+                          <li>
+                            <a href="#">Case study</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="map-item ">
+                        <h4 class="fm-heading-4 my-md-4 my-3 fw-bold">Chính sách</h4>
+                        <ul>
+                          <li>
+                            <a href="#">Về chúng tôi</a>
+                          </li>
+                          <li>
+                            <a href="#">Bảng giá</a>
+                          </li>
+                          <li>
+                            <a href="#">Case study</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-sub mt-md-5 mt-4 pt-md-5 pt-4">
+                  <div class="gg-partner">
                     <div class="row">
-                        <div class="col-lg-3">
-                            <div class="footer-cover__inner">
-                                <div class="footer-logo">
-                                    <img src="./assets/images/logo.svg" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-4">
-                            <div class="footer-cover__inner">
-                                <a href="#">
-                                    <div class="cover-img">
-                                        <svg height="512" width="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                            <switch>
-                                                <g>
-                                                    <path fill="currentColor" d="M487.5 146.5c-20.9-44.3-54-81.5-95.7-107.6-58-36.2-126.7-47.7-193.3-32.3C131.9 21.9 75.2 62.3 39 120.3 2.7 178.3-8.8 246.9 6.6 313.6s55.8 123.3 113.7 159.5c40.8 25.5 87.6 39 135.5 39h3.1c47.7-.6 94.1-14.4 134.3-39.8 11.7-7.4 15.1-22.8 7.7-34.5s-22.8-15.1-34.5-7.7c-32.3 20.5-69.7 31.6-108.1 32.1-39.4.5-77.9-10.4-111.5-31.3-96.3-60.4-125.7-187.8-65.4-284.1 29.2-46.7 74.8-79.2 128.4-91.5 53.6-12.4 108.8-3.1 155.5 26.1 33.6 21 60.2 50.9 77 86.5 16.4 34.7 22.8 73.2 18.5 111.2-1.5 13.7 8.3 26.1 22.1 27.6 13.7 1.5 26.1-8.3 27.6-22.1 5.3-47.2-2.7-95-23-138.1z"></path>
-                                                    <path fill="currentColor" d="M211.9 151.2c-9.8-9.8-25.6-9.8-35.4 0-13.6 13.6-22 31.7-23.5 51s4 38.5 15.4 54c26 35.3 57.1 66.4 92.4 92.4 13.9 10.2 30.6 15.7 47.7 15.7 2.1 0 4.2-.1 6.3-.2 19.2-1.5 37.3-9.8 51-23.5 9.8-9.8 9.8-25.6 0-35.4s-25.6-9.8-35.4 0c-10.7 10.7-27.9 12.1-40 3.2-31.2-23-58.7-50.5-81.7-81.7-8.9-12.1-7.6-29.3 3.2-40 9.8-9.9 9.8-25.8 0-35.5z"></path>
-                                                </g>
-                                            </switch>
-                                        </svg>
-                                    </div>
-                                    <div class="cover-infor">
-                                        <span class="text-uppercase fw-bold">hotline</span>
-                                        <span class="c-orange fw-bold fs-16">1900. 272 737
-                                        </span>
-                                        <span class="c-orange fw-bold fs-16">
-                                            (028. 7777. 2737)
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-cover__inner">
-                                <a href="#">
-                                    <div class="cover-img">
-                                        <svg height="512" width="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="currentColor" d="M392 418.5H240c-11.046 0-20-8.954-20-20s8.954-20 20-20h152c44.112 0 80-35.888 80-80v-164c0-44.112-35.888-80-80-80H120c-44.112 0-80 35.888-80 80v154c0 5.514 4.486 10 10 10h60c11.046 0 20 8.954 20 20s-8.954 20-20 20H50c-27.57 0-50-22.43-50-50v-154c0-66.168 53.832-120 120-120h272c66.168 0 120 53.832 120 120v164c0 66.168-53.832 120-120 120zm-212-20.021c0-11.046-8.954-20-20-20H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h140c11.046 0 20-8.954 20-20zm60 79.021c0-11.046-8.954-20-20-20H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h200c11.046 0 20-8.954 20-20zm89.236-225.558l96.855-73.512c8.798-6.678 10.518-19.224 3.839-28.022-6.676-8.797-19.223-10.518-28.022-3.839l-96.893 73.54c-28.552 21.774-68.422 21.788-96.981.037l-93.807-72.474c-8.741-6.753-21.303-5.142-28.055 3.6-6.753 8.741-5.142 21.301 3.6 28.055l93.855 72.512.099.075c21.429 16.345 47.109 24.515 72.786 24.515 25.664 0 51.324-8.164 72.724-24.487z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="cover-infor">
-                                        <span class="text-uppercase fw-bold">email</span>
-                                        <span class="c-orange fw-bold fs-16">cool@coolmate.com.me
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-cover__inner">
-                                <div class="social-grid">
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/facebook.svg" class="img" alt="">
-                                    </a>
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/youtube.svg" class="img" alt="">
-                                    </a>
-                                    <a href="#" class="social-item">
-                                        <img src="./assets/images/ig.svg" class="img" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="col-md-4">
+                        <figure>
+                          <img src="./assets/images/google-partner.png" class="img-fluid" alt="">
+                        </figure>
+                      </div>
+                      <div class="col-md-8">
+                        <span class="fs-20 fw-bold">
+                          Là đối tác ủy quyền được chứng nhận <br> toàn cầu của Google
+                        </span>
+                      </div>
                     </div>
-                </div>
-                <div class="footer-main">
-                    <div class="accordion" id="accordionFooter">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterone">
-                                        <button class="accordion-button fs-16 fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterone" aria-expanded="true" aria-controls="collapseFooterone">
-                                            ĐỊA CHỈ LIÊN HỆ
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFooterone" class="accordion-collapse collapse" aria-labelledby="headingFooterone" data-bs-parent="#accordionFooter">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>
-                                                    <span class="fw-bold">HUB Hà Nội:</span>
-                                                     Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
-                                                </li>
-                                                <li>
-                                                    <span class="fw-bold">HUB Hà Nội:</span>
-                                                     Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, TP. Hà Nội
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFootertwo">
-                                    <button class="accordion-button fs-16 fw-bold text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFootertwo" aria-expanded="false" aria-controls="collapseFootertwo">
-                                        TRUY CẬP NHANH
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFootertwo" class="accordion-collapse collapse" aria-labelledby="headingFootertwo" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Câu chuyện về Coolmate</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chính sách khuyến mãi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Đổi trả 60 ngày</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Chính sách giao hàng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Bảo mật và điều khoản sử dụng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Khách hàng hài lòng 100%</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Thành viên Coolmate</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Nhà máy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Cool Blog - Mặc đẹp sống chất</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterthree">
-                                    <button class="accordion-button fs-16 fw-bold text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterthree" aria-expanded="false" aria-controls="collapseFooterthree">
-                                        Sản phẩm
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFooterthree" class="accordion-collapse collapse" aria-labelledby="headingFooterthree" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Tủ đồ tạo sẵn</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Tủ đồ định kỳ Coolsub</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Coolxprint</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFooterFour">
-                                    <button class="accordion-button fs-16 text-uppercase fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooterFour" aria-expanded="false" aria-controls="collapseFooterFour">
-                                        Chính sách
-                                    </button>
-                                    </h2>
-                                    <div id="collapseFooterFour" class="accordion-collapse collapse" aria-labelledby="headingFooterFour" data-bs-parent="#accordionFooter">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Liên hệ</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Hỏi đáp</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Thông tin tài khoản</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Đơn hàng</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Tủ đồ định kỳ của bạn</a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="qr-code">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-4">
+                        <figure >
+                          <img src="./assets/images/qr-code.png" class="img-fluid" alt="">
+                        </figure>
+                      </div>
+                      <div class="col-md-8">
+                        <span class="fs-20 fw-bold">
+                          Tải app CNV Loyalty demo:
+                        </span>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              Link IOS
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Link Android
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="footer-copyright">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="footer-copyright__inner">
-                                <div class="footer-copyright__inner-content">
-                                    <div class="title text-uppercase fw-bold mb-2">
-                                        @ CÔNG TY TNHH FASTECH ASIA
-                                    </div>
-                                    <p>
-                                        Mã số doanh nghiệp: 0108617038. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hà Nội cấp lần đầu ngày 20/02/2019.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="footer-copyright__inner">
-                                <div class="footer-copyright__inner-img">
-                                    <img src="./assets/images/copyright1.svg" class="img-fluid" alt="">
-                                    <img src="./assets/images/logoSaleNoti.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="footer-copyright py-4">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="footer-copyright__inner">
+                  <div class="footer-copyright__inner-content">
+                    <p>
+                      Copyright © 2009 CNV Software. All rights reserved. Công
+                      ty thiết kế app tại HCM.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="footer-copyright__inner d-flex justify-content-end">
+                  <ul>
+                    <li>
+                      <a href="#">Quy định sử dụng</a>
+                    </li>
+                    <li>
+                      <a href="#">Chính sách bảo mật</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- JS -->
@@ -1494,10 +978,12 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+    <!-- <script src="assets/js/gsap.min.js"></script> -->
+    <script src="assets/js/splitting.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/fresco.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
